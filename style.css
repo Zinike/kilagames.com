@@ -338,14 +338,14 @@ body {
   header .contenedor .menu ul {
     flex-direction: column;
     padding: 10px 0px 10px 0px;
-    background: #ffc85e;
+    background: white;
   }
 
   header .contenedor .menu a {
     padding: 5px 15px;
     text-decoration: none;
     font-weight: bold;
-    color: #000;
+    color: #black;
     transition: color 500ms;
   }
 
