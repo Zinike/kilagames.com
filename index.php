@@ -117,7 +117,7 @@
 
   <script> src="script.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173856593005932" crossorigin="anonymous"></script>
-
+  
 </body>
 
 </html>
