@@ -173,7 +173,7 @@ header .contenedor .menu ul li {
 #pc .contenedor .card .tarjeta .link {
   border-top: 1px solid white;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
 }
 
 #consolas {
