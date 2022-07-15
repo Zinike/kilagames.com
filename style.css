@@ -334,8 +334,8 @@ body {
     border-radius: 15px;
   }
 
-  .mostrar_menu {
-    display: list-item;
+  header .contenedor .menu .mostrar_menu {
+    display: flex;
   }
 
   header .contenedor .menu ul {
