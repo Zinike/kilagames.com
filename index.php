@@ -66,7 +66,7 @@
           <img src="<?php echo $row['foto'];?>" alt="imagen">
           <h4><?php echo $row['nombre'];?></h4>
           <p><?php echo $row['descripcion'];?></p>
-          <a href="#">Descargar</a>
+          <a href="<?php $row['link'];?>">Descargar</a>
         </div>
     </div>
     <?php }?>
