@@ -320,12 +320,13 @@ body {
 
   header .contenedor .menu {
     display: flex;
-    position: absolute;
-    right: 100px;
+    flex-direction: row;
   }
 
   header .contenedor .menu ul {
     display: flex;
+    flex-direction: row;
+    list-style: none;
   }
 
   header .contenedor .menu ul li {
