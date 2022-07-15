@@ -101,7 +101,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="donaciones">
       <div class="contenedor">
         <h2>Donaciones</h2>
         <p>Gracias por visitarnos, si queres ayudarnos a que sigamos subiendo juegos podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
