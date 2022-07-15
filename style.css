@@ -20,7 +20,7 @@ body {
   font-family: 'PixelF';
   background-image: url('Media/fondo.webp');
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: contain;
   width: 100vw;
   display: flex;
   flex-direction: column;
