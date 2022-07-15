@@ -320,7 +320,7 @@ body {
   }
 
   header .contenedor .menu {
-    display: flex;
+    display: block;
     flex-direction: row;
   }
 
