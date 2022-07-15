@@ -68,10 +68,9 @@
           <p><?php echo $row['descripcion'];?></p>
           <a href="<?php $row['link'];?>">Descargar</a>
         </div>
-    </div>
-    <?php }?>
-    <?php mysqli_free_result($resultado);?>
-    </form>
+        <?php }?>
+        <?php mysqli_free_result($resultado);?>
+      </form>
     </div>
   </section>
 
