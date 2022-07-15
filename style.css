@@ -328,7 +328,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 0;
-    position: absolute;
+    position: relative;
     top: 30px;
     right: 10px;
     background-color: #000;
