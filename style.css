@@ -53,7 +53,7 @@ p {
 }
 
 a {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: color 500ms;
 }
@@ -165,6 +165,8 @@ header .contenedor .menu ul li {
 #pc .contenedor .card .tarjeta p {
   font-size: 1rem;
 }
+
+#pc .contenedor .card .tarjeta .link {}
 
 #consolas {
   display: flex;
