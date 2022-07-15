@@ -20,7 +20,7 @@ body {
   font-family: 'PixelF';
   background-image: url('Media/fondo.jpg');
   background-repeat: repeat-y;
-  background-size: contain;
+  background-size: cover;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -484,7 +484,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    background: #111;
+    background: #111111;
     justify-content: center;
     align-items: center;
   }
