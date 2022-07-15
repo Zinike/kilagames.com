@@ -335,23 +335,22 @@ body {
     transition: all 300ms;
   }
 
-  header .contenedor .menu.mostrar_menu {
-    height: 90px;
-  }
-
   header .contenedor .menu ul {
-    display: flex;
     flex-direction: column;
-    margin: 0 10px;
-    list-style: none;
+    padding: 10px 0px 10px 0px;
+    background: #ffc85e;
   }
 
-  header .contenedor .menu ul a {
+  header .contenedor .menu a {
     padding: 5px 15px;
     text-decoration: none;
     font-weight: bold;
     color: #000;
     transition: color 500ms;
+  }
+
+  header .contenedor .menu.mostrar_menu {
+    height: 90px;
   }
 
   *:focus {
