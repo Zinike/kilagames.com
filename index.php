@@ -104,7 +104,8 @@
       <h2>Discord</h2>
       <a href="https://discord.gg/qFGtG2r6km"></a>
       <h2>Donaciones</h2>
-      <p>Gracias por visitarnos, si queres ayudarnos a que sigamos subiendo juegos podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
+      <h3>¡Gracias por visitarnos!</h3>
+      <p>Si queres ayudarnos a que sigamos subiendo juegos podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
       <a href="https://paypal.me/KilaGames?country.x=AR&locale.x=es_XC" target="_blank">Paypal</a>
     </div>
   </section>
