@@ -22,6 +22,41 @@
     <header>
       <div class="contenedor">
         <img src="Media/logo.png" alt="logo">
+
+
+
+
+        <div id="webapp_cover">
+          <div id="menu_button">
+            <input type="checkbox" id="menu_checkbox">
+            <label for="menu_checkbox" id="menu_label">
+              <div id="menu_text_bar"></div>
+            </label>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <nav class="menu">
           <ul>
             <li>
