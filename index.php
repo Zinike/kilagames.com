@@ -29,34 +29,36 @@
             <input type="checkbox" id="menu_checkbox">
             <label for="menu_checkbox" id="menu_label">
               <div id="menu_text_bar">
-                <nav class="menu">
-                  <ul>
-                    <li>
-                      <a href="#hero">
-                        <p>Inicio</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#pc">
-                        <p>PC</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#consolas">
-                        <p>Consolas</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#peliculas">
-                        <p>Peliculas y Series</p>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
               </div>
             </label>
           </div>
         </div>
+
+
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#hero">
+                <p>Inicio</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pc">
+                <p>PC</p>
+              </a>
+            </li>
+            <li>
+              <a href="#consolas">
+                <p>Consolas</p>
+              </a>
+            </li>
+            <li>
+              <a href="#peliculas">
+                <p>Peliculas y Series</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
