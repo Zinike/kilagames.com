@@ -326,8 +326,9 @@ body {
 
   header .contenedor .menu ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style: none;
+    height: 0;
   }
 
   header .contenedor .menu ul li {
