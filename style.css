@@ -320,8 +320,8 @@ body {
   }
 
   header .contenedor .menu_icon {
-    display: flex;
-    cursor: pointer;
+    position: absolute;
+    right: 10px;
   }
 
   header .contenedor .menu {
@@ -336,6 +336,7 @@ body {
   }
 
   header .contenedor .menu ul {
+    display: flex;
     flex-direction: column;
     padding: 10px 0px 10px 0px;
     background: white;
