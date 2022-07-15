@@ -3,3 +3,182 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'PixelF';
+  src: url('Fonts/PixelF.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 1vw;
+  color: grey;
+}
+
+body {
+  font-family: 'PixelF';
+  background-image: url('Media/fondo.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 500ms;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  background-color: black;
+  z-index: 100;
+  height: 10vh;
+  width: 100vw;
+}
+
+header .contenedor {
+  display: flex;
+  height: 100%;
+  max-width: 80%;
+  align-items: center;
+}
+
+header img {
+  position: absolute;
+  left: 100px;
+}
+
+header .contenedor .menu {
+  display: flex;
+  position: absolute;
+  right: 100px;
+}
+
+header .contenedor .menu ul {
+  display: flex;
+}
+
+header .contenedor .menu ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+#hero {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#pc {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#pc .contenedor {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#consolas {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#consolas .contenedor {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#peliculas {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#peliculas .contenedor {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .contenedor {
+  padding: 15px;
+  height: 5vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+}
