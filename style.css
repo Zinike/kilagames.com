@@ -316,21 +316,21 @@ body {
   header img {
     max-width: 50%;
     position: absolute;
-    right: 10px;
+    left: 10px;
   }
 
   header .contenedor .menu {
     display: block;
     flex-direction: row;
+    height: 0;
+    position: absolute;
+    right: 10px;
   }
 
   header .contenedor .menu ul {
     display: flex;
     flex-direction: column;
     list-style: none;
-    height: 0;
-    position: absolute;
-    right: 10px;
   }
 
   header .contenedor .menu ul li {
