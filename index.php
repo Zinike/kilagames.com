@@ -66,7 +66,9 @@
           <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
           <h4><?php echo $row['nombre'];?></h4>
           <p><?php echo $row['descripcion'];?></p>
-          <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
+          <div class="link">
+            <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
+          </div>
         </div>
         <?php }?>
         <?php mysqli_free_result($resultado);?>
