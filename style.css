@@ -325,7 +325,7 @@ body {
   }
 
   header .contenedor .menu {
-    height: 160px;
+    height: 00px;
     border-radius: 15px;
     position: absolute;
     right: 5vw;
@@ -350,8 +350,8 @@ body {
     transition: color 500ms;
   }
 
-  header .contenedor .menu.mostrar_menu {
-    height: 90px;
+  header .contenedor .menu .mostrar_menu {
+    height: 200px;
   }
 
   *:focus {
