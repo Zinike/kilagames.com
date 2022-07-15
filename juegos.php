@@ -25,22 +25,22 @@
       <nav class="menu">
         <ul>
           <li>
-            <a href="index.php/#hero">
+            <a href="#hero">
               <p>Inicio</p>
             </a>
           </li>
           <li>
-            <a href="index.php/#pc">
+            <a href="#pc">
               <p>PC</p>
             </a>
           </li>
           <li>
-            <a href="index.php/#consolas">
+            <a href="#consolas">
               <p>Consolas</p>
             </a>
           </li>
           <li>
-            <a href="index.php/#peliculas">
+            <a href="#peliculas">
               <p>Peliculas y Series</p>
             </a>
           </li>
