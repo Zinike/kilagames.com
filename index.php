@@ -24,8 +24,6 @@
         <img src="Media/logo.png" alt="logo">
 
 
-
-
         <div id="webapp_cover icon_menu">
           <div id="menu_button">
             <input type="checkbox" id="menu_checkbox">
@@ -34,27 +32,6 @@
             </label>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <nav class="menu">
