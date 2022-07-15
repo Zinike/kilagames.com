@@ -35,7 +35,7 @@
         </div>
       </div>
 
-      <nav id="menu" class="menu">
+      <nav class="menu">
         <ul>
           <a href="#hero">Inicio</a>
           <a href="#pc">PC</a>
