@@ -146,6 +146,11 @@ header .contenedor .menu ul li {
   border-radius: 8px;
 }
 
+#pc .contenedor .card .tarjeta img {
+  width: auto;
+  height: 50%;
+}
+
 #consolas {
   display: flex;
   align-items: center;
