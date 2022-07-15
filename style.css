@@ -325,7 +325,7 @@ body {
   }
 
   header .contenedor .menu {
-    height: 0px;
+    height: 90px;
     border-radius: 15px;
     position: absolute;
     right: 10vw;
@@ -336,7 +336,6 @@ body {
   }
 
   header .contenedor .menu ul {
-    display: flex;
     flex-direction: column;
     padding: 10px 0px 10px 0px;
     background: white;
