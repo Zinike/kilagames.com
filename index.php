@@ -64,7 +64,7 @@
             while ($row=mysqli_fetch_assoc($resultado)) {?>
           <div class="tarjeta">
             <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
-            <h4><?php echo $row['nombre'];?></h4>
+            <h3><?php echo $row['nombre'];?></h3>
             <p><?php echo $row['descripcion'];?></p>
             <div class="link">
               <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
