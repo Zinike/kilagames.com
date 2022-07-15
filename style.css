@@ -320,8 +320,8 @@ body {
   }
 
   header .contenedor .menu_icon {
-    position: absolute;
-    right: 10px;
+    display: flex;
+    cursor: pointer;
   }
 
   header .contenedor .menu {
