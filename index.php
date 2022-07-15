@@ -6,6 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Marcos Zingaretti">
+  <meta name="description" content="Los juegos que quieras, por el mejor precio: GRATIS">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
   <title>KilaGames</title>
@@ -28,6 +29,7 @@
           <input type="checkbox" id="menu_checkbox">
           <label for="menu_checkbox" id="menu_label">
             <div id="menu_text_bar">
+              QUE HAY ACA
             </div>
           </label>
         </div>
