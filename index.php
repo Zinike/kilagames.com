@@ -26,7 +26,7 @@
 
 
 
-        <div id="webapp_cover">
+        <div id="webapp_cover icon_menu">
           <div id="menu_button">
             <input type="checkbox" id="menu_checkbox">
             <label for="menu_checkbox" id="menu_label">
@@ -153,6 +153,6 @@
     </footer>
   </body>
 
-  <script src=""></script>
+  <script src="menu.js"></script>
 
 </html>
