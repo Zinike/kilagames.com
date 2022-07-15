@@ -316,7 +316,7 @@ body {
   header img {
     max-width: 50%;
     position: absolute;
-    left: 12px;
+    left: 10px;
   }
 
   header .contenedor .menu {
@@ -329,6 +329,8 @@ body {
     flex-direction: column;
     list-style: none;
     height: 0;
+    position: absolute;
+    right: 10px;
   }
 
   header .contenedor .menu ul li {
