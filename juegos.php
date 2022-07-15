@@ -25,7 +25,7 @@
       <nav class="menu">
         <ul>
           <li>
-            <a href="#index.php">
+            <a href="/index.php">
               <p>Volver<p>
             </a>
           </li>
