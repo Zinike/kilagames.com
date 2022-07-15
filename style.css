@@ -319,6 +319,11 @@ body {
     left: 10px;
   }
 
+  header .contenedor .icon_menu {
+    position: absolute;
+    right: 10px;
+  }
+
   header .contenedor .menu {
     display: block;
     flex-direction: row;
