@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <nav class="menu">
+      <nav class="menu.">
         <ul>
           <a href="#hero">Inicio</a>
           <a href="#pc">PC</a>
@@ -42,7 +42,6 @@
           <a href="#peliculas">Peliculas y Series</a>
         </ul>
       </nav>
-
     </div>
   </header>
 
