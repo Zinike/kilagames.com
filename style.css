@@ -340,7 +340,7 @@ body {
   header .contenedor .menu ul {
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+    margin: 0 10px;
     list-style: none;
   }
 
