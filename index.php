@@ -35,18 +35,10 @@
 
       <nav class="menu">
         <ul>
-          <a href="#hero">
-            <p>Inicio</p>
-          </a>
-          <a href="#pc">
-            <p>PC</p>
-          </a>
-          <a href="#consolas">
-            <p>Consolas</p>
-          </a>
-          <a href="#peliculas">
-            <p>Peliculas y Series</p>
-          </a>
+          <a href="#hero">Inicio</a>
+          <a href="#pc">PC</a>
+          <a href="#consolas">Consolas</a>
+          <a href="#peliculas">Peliculas y Series</a>
         </ul>
       </nav>
 
