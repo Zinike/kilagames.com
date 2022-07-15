@@ -105,7 +105,7 @@
       <div class="contenedor">
         <h2>Donaciones</h2>
         <p>Gracias por visitarnos, si queres ayudarnos a que sigamos subiendo juegos podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
-        <a href="https://paypal.me/KilaGames?country.x=AR&locale.x=es_XC">Paypal</a>
+        <a href="https://paypal.me/KilaGames?country.x=AR&locale.x=es_XC" target="_blank">Paypal</a>
       </div>
     </section>
 
