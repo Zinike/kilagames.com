@@ -118,6 +118,6 @@
     </footer>
   </body>
 
-  <script src="JS/menu.js"></script>
+  <script src=""></script>
 
 </html>
