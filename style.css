@@ -322,7 +322,6 @@ body {
   header .contenedor .icon_menu {
     position: absolute;
     right: 10px;
-    height: 0px;
   }
 
   header .contenedor .menu {
