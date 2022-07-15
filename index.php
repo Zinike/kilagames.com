@@ -103,7 +103,7 @@
       <a href="https://discord.gg/8hF3GaTtUz">¡ENTRA AHORA!</a>
       <h2>Donaciones</h2>
       <h3>¡Gracias por visitarnos!</h3>
-      <p>Si queres ayudarnos a que sigamos subiendo juegos y seguir libre de anuncios molestos</p>
+      <p>Si queres ayudarnos a que sigamos subiendo juegos y seguir libre de anuncios molestos durante la descarga</p>
       <p>podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
       <a href="https://paypal.me/KilaGames?country.x=AR&locale.x=es_XC" target="_blank">Paypal</a>
     </div>
@@ -117,7 +117,7 @@
 
   <script> src="script.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173856593005932" crossorigin="anonymous"></script>
-  
+
 </body>
 
 </html>
