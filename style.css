@@ -324,16 +324,16 @@ body {
     right: 10px;
   }
 
-  .mostrar_menu {
-    display: none;
-  }
-
   header .contenedor .menu {
-    display: block;
+    display: flex;
     flex-direction: row;
     height: 0;
     position: absolute;
     right: 10px;
+  }
+
+  .mostrar_menu {
+    height: 100px;
   }
 
   header .contenedor .menu ul {
