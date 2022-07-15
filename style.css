@@ -327,7 +327,7 @@ body {
   header .contenedor .menu {
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: absolute;
     top: 50px;
     right: 10px;
     background-color: #000;
