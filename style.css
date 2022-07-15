@@ -67,6 +67,10 @@ header {
   width: 100vw;
 }
 
+header p {
+  font-size: 1.5rem;
+}
+
 header .contenedor {
   display: flex;
   height: 100%;

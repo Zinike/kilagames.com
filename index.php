@@ -66,6 +66,7 @@
           <img src="<?php echo $row['foto'];?>" alt="imagen">
           <h4><?php echo $row['nombre'];?></h4>
           <p><?php echo $row['descripcion'];?></p>
+          <a href="#">Descargar</a>
         </div>
     </div>
     <?php }?>
@@ -77,7 +78,7 @@
   <section id="consolas">
     <div class="contenedor">
       <h2>Juegos de Consolas</h2>
-      <form class="consola-games" action="index.html" method="post">
+      <form class="consola-games card" action="index.html" method="post">
         <ul>
           <p>PROXIMAMENTE</p>
         </ul>
@@ -89,7 +90,7 @@
   <section id="peliculas">
     <div class="contenedor">
       <h2>Peliculas y Series</h2>
-      <form class="peliculas-series" action="index.html" method="post">
+      <form class="peliculas-series card" action="index.html" method="post">
         <ul>
           <p>PROXIMAMENTE</p>
         </ul>
