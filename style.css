@@ -126,6 +126,15 @@ header .contenedor .menu ul li {
   justify-content: center;
 }
 
+#pc .contenedor .card {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background: #111;
+  justify-content: center;
+  align-items: center;
+}
+
 #consolas {
   display: flex;
   align-items: center;
