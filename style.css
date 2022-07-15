@@ -334,7 +334,7 @@ body {
     height: 0px;
   }
 
-  header .contenedor .menu .mostrar_menu {
+  .mostrar_menu {
     height: 100px;
   }
 
