@@ -327,11 +327,11 @@ body {
   header .contenedor .menu {
     display: flex;
     flex-direction: row;
-    height: 0px;
     position: relative;
     top: 50px;
     right: 10px;
     background-color: #000;
+    height: 0px;
   }
 
   header .contenedor .menu .mostrar_menu {
