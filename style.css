@@ -324,6 +324,10 @@ body {
     right: 10px;
   }
 
+  .mostrar_menu {
+    display: none;
+  }
+
   header .contenedor .menu {
     display: block;
     flex-direction: row;
