@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <nav class="menu">
+      <nav class="menu .mostrar_menu">
         <ul>
           <a href="#hero">Inicio</a>
           <a href="#pc">PC</a>
@@ -101,7 +101,7 @@
   <section id="donaciones">
     <div class="contenedor">
       <h2>Discord</h2>
-      <a href="https://discord.gg/qFGtG2r6km"></a>
+      <a href="https://discord.gg/qFGtG2r6km">¡ENTRA AHORA!</a>
       <h2>Donaciones</h2>
       <h3>¡Gracias por visitarnos!</h3>
       <p>Si queres ayudarnos a que sigamos subiendo juegos podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
