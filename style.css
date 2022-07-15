@@ -325,15 +325,17 @@ body {
     height: 0px;
   }
 
-  header .contenedor .menu_nav {
+  header .contenedor .menu {
+    display: none;
     position: absolute;
     top: 100px;
     right: 10px;
     background-color: white;
+    border-radius: 15px;
   }
 
   .mostrar_menu {
-    height: 100px;
+    display: list-item;
   }
 
   header .contenedor .menu ul {
