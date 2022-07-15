@@ -325,11 +325,11 @@ body {
   }
 
   header .contenedor .menu {
-    height: 150px;
+    height: 160px;
     border-radius: 15px;
     position: absolute;
-    right: 10vw;
-    top: 10vh;
+    right: 5vw;
+    top: 9vh;
     overflow: hidden;
     z-index: 100;
     transition: all 300ms;
