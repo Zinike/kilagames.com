@@ -334,7 +334,7 @@ body {
     background-color: #000;
   }
 
-  .mostrar_menu {
+  header .contenedor .icon_menu .mostrar_menu {
     height: 100px;
   }
 
