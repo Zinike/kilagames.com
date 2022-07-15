@@ -25,23 +25,8 @@
       <nav class="menu">
         <ul>
           <li>
-            <a href="#hero">
-              <p>Inicio</p>
-            </a>
-          </li>
-          <li>
-            <a href="#pc">
-              <p>PC</p>
-            </a>
-          </li>
-          <li>
-            <a href="#consolas">
-              <p>Consolas</p>
-            </a>
-          </li>
-          <li>
-            <a href="#peliculas">
-              <p>Peliculas y Series</p>
+            <a href="#index.php">
+              <p>Volver<p>
             </a>
           </li>
         </ul>
