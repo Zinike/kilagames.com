@@ -395,7 +395,7 @@ body {
   }
 
   #menu_text_bar:before {
-    content: "MENU";
+    content: "PLAY";
     position: absolute;
     top: 5px;
     right: 0;
