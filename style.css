@@ -164,6 +164,7 @@ header .contenedor .menu ul li {
 
 #pc .contenedor .card .tarjeta p {
   font-size: .75rem;
+  height: 50%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
