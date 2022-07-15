@@ -162,6 +162,10 @@ header .contenedor .menu ul li {
   height: 50%;
 }
 
+#pc .contenedor .card .tarjeta p {
+  font-size: 1rem;
+}
+
 #consolas {
   display: flex;
   align-items: center;
