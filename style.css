@@ -138,13 +138,12 @@ header .contenedor .menu ul li {
 #pc .contenedor .card .tarjeta {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 400px;
   width: 200px;
   max-height: 600px;
   max-width: 400px;
   margin: 15px;
   border-radius: 8px;
-  transition: all 500ms;
 }
 
 #consolas {
