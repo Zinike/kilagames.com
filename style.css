@@ -327,7 +327,7 @@ body {
   header .contenedor .menu {
     display: flex;
     flex-direction: row;
-    height: 0;
+    height: 0px;
     position: relative;
     top: 50px;
     right: 10px;
@@ -345,7 +345,6 @@ body {
   }
 
   header .contenedor .menu ul li {
-    height: 0;
     padding: 0 10px;
     list-style: none;
   }

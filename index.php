@@ -35,7 +35,7 @@
         </div>
 
 
-        <nav class="menu mostrar_menu">
+        <nav class="menu">
           <ul>
             <li>
               <a href="#hero">
