@@ -326,18 +326,17 @@ body {
 
   header .contenedor .menu {
     height: 0px;
-    position: absolute;
-    top: 100px;
-    right: 10px;
-    background-color: white;
     border-radius: 15px;
+    position: absolute;
+    right: 10vw;
+    top: 10vh;
     overflow: hidden;
     z-index: 100;
     transition: all 300ms;
   }
 
   header .contenedor .menu.mostrar_menu {
-    height: 100px;
+    height: 90px;
   }
 
   header .contenedor .menu ul {
