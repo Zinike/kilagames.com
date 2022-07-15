@@ -163,6 +163,7 @@ header .contenedor .menu ul li {
 #pc .contenedor .card .tarjeta img {
   width: auto;
   height: 60%;
+  border: 1px white;
 }
 
 #pc .contenedor .card .tarjeta p {
