@@ -488,6 +488,10 @@ body {
   }
 }
 
+*:focus {
+  outline: none;
+}
+
 #webapp_cover {
   position: absolute;
   top: 50%;
