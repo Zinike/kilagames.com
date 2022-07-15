@@ -12,7 +12,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-size: 1vw;
+  font-size: 1em;
   color: grey;
 }
 
