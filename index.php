@@ -29,7 +29,6 @@
           <input type="checkbox" id="menu_checkbox">
           <label for="menu_checkbox" id="menu_label">
             <div id="menu_text_bar">
-              QUE HAY ACA
             </div>
           </label>
         </div>
