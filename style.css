@@ -28,7 +28,7 @@ body {
   align-items: center;
 }
 
-@media scree and (orientation: landscape) {
+@media screen and (orientation: landscape) {
   h1 {
     font-size: 4rem;
   }
