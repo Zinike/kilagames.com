@@ -340,10 +340,6 @@ body {
   header .contenedor .menu ul {
     display: flex;
     flex-direction: column;
-    list-style: none;
-  }
-
-  header .contenedor .menu ul li {
     padding: 0 10px;
     list-style: none;
   }
