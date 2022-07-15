@@ -5,5 +5,6 @@ if(!$conn){
 }
 
 $pc = "SELECT * FROM `pc`";
+$pclimited = "SELECT * FROM `pc` LIMIT 5";
 
 ?>
