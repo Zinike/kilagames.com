@@ -114,8 +114,10 @@
       <p>KilaGames - Todos los derechos reservados</p>
     </div>
   </footer>
-</body>
 
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
 
 </html>
