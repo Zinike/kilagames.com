@@ -28,230 +28,462 @@ body {
   align-items: center;
 }
 
-h1 {
-  font-size: 4rem;
+@media scree and (orientation: landscape) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  li {
+    font-size: 1.05rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 500ms;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    background-color: black;
+    z-index: 100;
+    height: 10vh;
+    width: 100vw;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  header .contenedor {
+    display: flex;
+    height: 100%;
+    max-width: 80%;
+    align-items: center;
+  }
+
+  header img {
+    position: absolute;
+    left: 100px;
+  }
+
+  header .contenedor .menu {
+    display: flex;
+    position: absolute;
+    right: 100px;
+  }
+
+  header .contenedor .menu ul {
+    display: flex;
+  }
+
+  header .contenedor .menu ul li {
+    padding: 0 10px;
+    list-style: none;
+  }
+
+  #hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #hero .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #pc {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #pc .contenedor {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #pc .contenedor .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #111;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pc .contenedor .card .tarjeta {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 200px;
+    max-height: 600px;
+    max-width: 400px;
+    margin: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pc .contenedor .card .tarjeta img {
+    width: auto;
+    height: 60%;
+  }
+
+  #pc .contenedor .card .tarjeta p {
+    font-size: .65rem;
+    width: auto;
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  #pc .contenedor .card .tarjeta .link {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #consolas {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #consolas .contenedor {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #peliculas {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #peliculas .contenedor {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #donaciones {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #donaciones .contenedor {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    background-color: white;
+    color: black;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer .contenedor {
+    padding: 15px;
+    height: 5vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
 
-h2 {
-  font-size: 2rem;
-}
+@media scree and (orientation: portrait) {
+  h1 {
+    font-size: 4rem;
+  }
 
-h3 {
-  font-size: 1.5rem;
-}
+  h2 {
+    font-size: 2rem;
+  }
 
-h4 {
-  font-size: 1.25rem;
-}
+  h3 {
+    font-size: 1.5rem;
+  }
 
-li {
-  font-size: 1.05rem;
-}
+  h4 {
+    font-size: 1.25rem;
+  }
 
-p {
-  font-size: 1rem;
-}
+  li {
+    font-size: 1.05rem;
+  }
 
-a {
-  font-size: 1.25rem;
-  text-decoration: none;
-  transition: color 500ms;
-}
+  p {
+    font-size: 1rem;
+  }
 
-header {
-  position: fixed;
-  display: flex;
-  background-color: black;
-  z-index: 100;
-  height: 10vh;
-  width: 100vw;
-}
+  a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 500ms;
+  }
 
-header p {
-  font-size: 1.5rem;
-}
+  header {
+    position: fixed;
+    display: flex;
+    background-color: black;
+    z-index: 100;
+    height: 10vh;
+    width: 100vw;
+  }
 
-header .contenedor {
-  display: flex;
-  height: 100%;
-  max-width: 80%;
-  align-items: center;
-}
+  header p {
+    font-size: 1.5rem;
+  }
 
-header img {
-  position: absolute;
-  left: 100px;
-}
+  header .contenedor {
+    display: flex;
+    height: 100%;
+    max-width: 80%;
+    align-items: center;
+  }
 
-header .contenedor .menu {
-  display: flex;
-  position: absolute;
-  right: 100px;
-}
+  header img {
+    position: absolute;
+    left: 100px;
+  }
 
-header .contenedor .menu ul {
-  display: flex;
-}
+  header .contenedor .menu {
+    display: flex;
+    position: absolute;
+    right: 100px;
+  }
 
-header .contenedor .menu ul li {
-  padding: 0 10px;
-  list-style: none;
-}
+  header .contenedor .menu ul {
+    display: flex;
+  }
 
-#hero {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 50vh;
-  width: 100vw;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  header .contenedor .menu ul li {
+    padding: 0 10px;
+    list-style: none;
+  }
 
-#hero .contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
+  #hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-#pc {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 70vh;
-  width: 100vw;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  #hero .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
 
-#pc .contenedor {
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  #pc {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-#pc .contenedor .card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
-  background: #111;
-  justify-content: center;
-  align-items: center;
-}
+  #pc .contenedor {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-#pc .contenedor .card .tarjeta {
-  position: relative;
-  overflow: hidden;
-  height: 400px;
-  width: 200px;
-  max-height: 600px;
-  max-width: 400px;
-  margin: 15px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-}
+  #pc .contenedor .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #111;
+    justify-content: center;
+    align-items: center;
+  }
 
-#pc .contenedor .card .tarjeta img {
-  width: auto;
-  height: 60%;
-}
+  #pc .contenedor .card .tarjeta {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 200px;
+    max-height: 600px;
+    max-width: 400px;
+    margin: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
 
-#pc .contenedor .card .tarjeta p {
-  font-size: .65rem;
-  width: auto;
-  height: auto;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
+  #pc .contenedor .card .tarjeta img {
+    width: auto;
+    height: 60%;
+  }
 
-#pc .contenedor .card .tarjeta .link {
-  border-top: 1px solid white;
-  display: flex;
-  flex-direction: column;
-}
+  #pc .contenedor .card .tarjeta p {
+    font-size: .65rem;
+    width: auto;
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 
-#consolas {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 70vh;
-  width: 100vw;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  #pc .contenedor .card .tarjeta .link {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+  }
 
-#consolas .contenedor {
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  #consolas {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-#peliculas {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 70vh;
-  width: 100vw;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  #consolas .contenedor {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-#peliculas .contenedor {
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  #peliculas {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-#donaciones {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 70vh;
-  width: 100vw;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  #peliculas .contenedor {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-#donaciones .contenedor {
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  #donaciones {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-footer {
-  background-color: white;
-  color: black;
-  bottom: 0;
-  width: 100%;
-}
+  #donaciones .contenedor {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-footer .contenedor {
-  padding: 15px;
-  height: 5vh;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: flex-end;
+  footer {
+    background-color: white;
+    color: black;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer .contenedor {
+    padding: 15px;
+    height: 5vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
