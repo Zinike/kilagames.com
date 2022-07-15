@@ -325,7 +325,7 @@ body {
   }
 
   header .contenedor .menu {
-    height: 00px;
+    height: 0px;
     border-radius: 15px;
     position: absolute;
     right: 5vw;
@@ -346,7 +346,7 @@ body {
     padding: 5px 15px;
     text-decoration: none;
     font-weight: bold;
-    color: #black;
+    color: black;
     transition: color 500ms;
   }
 
