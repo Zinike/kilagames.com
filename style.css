@@ -350,15 +350,8 @@ body {
     transition: color 500ms;
   }
 
-  header .contenedor .menu {
+  header .contenedor .menu.mostrar_menu {
     height: 200px;
-    border-radius: 15px;
-    position: absolute;
-    right: 5vw;
-    top: 9vh;
-    overflow: hidden;
-    z-index: 100;
-    transition: all 300ms;
   }
 
   *:focus {
