@@ -98,7 +98,7 @@ body {
     display: flex;
   }
 
-  header .contenedor .menu ul li {
+  header .contenedor .menu ul a {
     padding: 0 10px;
     list-style: none;
   }
