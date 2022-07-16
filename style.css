@@ -263,6 +263,10 @@ body {
     justify-content: center;
   }
 
+  #donaciones .contenedor .donacion h2 {
+    color: #fe2020;
+  }
+
   footer {
     background-color: white;
     color: black;
