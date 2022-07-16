@@ -257,14 +257,11 @@ body {
   }
 
   #donaciones .contenedor .donacion {
+    color: #fe2020;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  #donaciones .contenedor .donacion h2 {
-    color: #fe2020;
   }
 
   footer {
