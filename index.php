@@ -99,10 +99,10 @@
   </section>
 
   <section id="donaciones">
+    <div class="discord">
+      <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
     <div class="contenedor">
-      <div class="discord">
-        <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-      </div>
       <div class="donacion">
         <h2>Donaciones</h2>
         <h3>¡Gracias por visitarnos!</h3>
