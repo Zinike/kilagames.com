@@ -70,17 +70,21 @@
       </form>
     </div>
   </section>
-
+  
   <section id="donaciones">
     <div class="contenedor">
-      <h2>Discord</h2>
-      <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-      <a href="https://discord.gg/8hF3GaTtUz">¡ENTRA AHORA!</a>
-      <h2>Donaciones</h2>
-      <h3>¡Gracias por visitarnos!</h3>
-      <p>Si queres ayudarnos a que sigamos subiendo juegos y seguir libre de anuncios molestos durante la descarga</p>
-      <p>podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
-      <a href="https://paypal.me/KilaGames?country.x=AR&locale.x=es_XC" target="_blank">Paypal</a>
+      <div class="donacion">
+        <h2>Donaciones</h2>
+        <h3>¡Gracias por visitarnos!</h3>
+        <p>Si queres ayudarnos a que sigamos subiendo juegos y seguir libre de anuncios molestos durante la descarga</p>
+        <p>podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
+        <a href="https://paypal.me/KilaGames?country.x=AR&locale.x=es_XC" target="_blank">Paypal</a>
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="discord">
+        <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
     </div>
   </section>
 
@@ -90,9 +94,7 @@
     </div>
   </footer>
 
-  <script>
-    src = "script.js" >
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
