@@ -257,7 +257,7 @@ body {
   }
 
   #donaciones .contenedor .donacion {
-    margin: 125px 25px 125px 25px;
+    padding: 125px 25px 125px 25px;
     height: 500px;
     width: 350px;
     color: #fe2020;
