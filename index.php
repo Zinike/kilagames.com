@@ -24,7 +24,7 @@
     <div class="contenedor">
       <img src="Media/logo.png" alt="logo">
 
-      <div id="menu_icon webapp_cover" class="menu_icon">
+      <div id="menu_icon" class="menu_icon">
         <div id="menu_button">
           <input type="checkbox" id="menu_checkbox">
           <label for="menu_checkbox" id="menu_label">
