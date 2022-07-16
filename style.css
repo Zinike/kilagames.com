@@ -257,6 +257,8 @@ body {
   }
 
   #donaciones .contenedor .donacion {
+    height: 500;
+    width: 350;
     color: #fe2020;
     display: flex;
     flex-direction: column;
