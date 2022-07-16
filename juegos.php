@@ -37,10 +37,7 @@
 
       <nav id="menu" class="menu">
         <ul>
-          <a href="#hero">Inicio</a>
-          <a href="#pc">PC</a>
-          <a href="#consolas">Consolas</a>
-          <a href="#peliculas">Peliculas y Series</a>
+          <a href="#index.php">Volver</a>
         </ul>
       </nav>
     </div>
