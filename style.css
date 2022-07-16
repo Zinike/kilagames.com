@@ -255,6 +255,10 @@ body {
     justify-content: center;
   }
 
+  #donaciones .contenedor .discord {}
+
+  #donaciones .contenedor .donacion {}
+
   footer {
     background-color: white;
     color: black;
