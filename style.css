@@ -253,9 +253,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0 15px 0 15px;
   }
-
-  #donaciones .discord {}
 
   #donaciones .contenedor .donacion {
     display: flex;
