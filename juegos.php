@@ -37,7 +37,7 @@
 
       <nav id="menu" class="menu">
         <ul>
-          <a href="#index.php">Volver</a>
+          <a href="/index.php">Volver</a>
         </ul>
       </nav>
     </div>
