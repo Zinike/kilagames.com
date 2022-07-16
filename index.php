@@ -100,7 +100,7 @@
 
   <section id="donaciones">
     <div class="discord">
-      <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
     <div class="contenedor">
       <div class="donacion">
