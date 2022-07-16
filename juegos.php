@@ -37,11 +37,7 @@
 
       <nav class="menu">
         <ul>
-          <li>
-            <a href="/index.php">
-              <p>Volver<p>
-            </a>
-          </li>
+          <a href="/index.php">Volver</a>
         </ul>
       </nav>
     </div>
