@@ -303,7 +303,7 @@ body {
     position: fixed;
     display: flex;
     background-color: black;
-    z-index: 100;
+    z-index: 50;
     height: 10vh;
     width: 100vw;
   }
