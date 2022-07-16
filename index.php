@@ -52,7 +52,10 @@
       <h2>Tu sitio de juegos</h2>
     </div>
   </section>
-  <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+  <div class="discord">
+    <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  </div>
 
   <section id="pc">
     <div class="contenedor">
