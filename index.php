@@ -99,17 +99,15 @@
   </section>
 
   <section id="donaciones">
-    <div class="discord">
+    <div class="contenedor">
       <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
     <div class="contenedor">
-      <div class="donacion">
         <h2>Donaciones</h2>
         <h3>¡Gracias por visitarnos!</h3>
         <p>Si queres ayudarnos a que sigamos subiendo juegos y seguir libre de anuncios molestos durante la descarga</p>
         <p>podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
         <a href="https://paypal.me/KilaGames?country.x=AR&locale.x=es_XC" target="_blank">Paypal</a>
-      </div>
     </div>
   </section>
 
