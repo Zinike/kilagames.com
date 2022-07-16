@@ -264,7 +264,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
+  }
+
+  #donaciones .contenedor .donacion p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   footer {
