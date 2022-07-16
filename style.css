@@ -193,7 +193,8 @@ body {
     overflow: hidden;
   }
 
-  #pc .contenedor .card .tarjeta .link {
+  #pc .contenedor .card .tarjeta a {
+    font-size: 1.25rem;
     border-top: 1px solid white;
     display: flex;
     flex-direction: column;
