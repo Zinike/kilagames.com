@@ -257,7 +257,12 @@ body {
 
   #donaciones .discord {}
 
-  #donaciones .contenedor .donacion {}
+  #donaciones .contenedor .donacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   footer {
     background-color: white;
