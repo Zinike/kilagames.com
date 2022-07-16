@@ -35,9 +35,12 @@
         </div>
       </div>
 
-      <nav class="menu">
+      <nav id="menu" class="menu">
         <ul>
-          <a href="/index.php">Volver</a>
+          <a href="#hero">Inicio</a>
+          <a href="#pc">PC</a>
+          <a href="#consolas">Consolas</a>
+          <a href="#peliculas">Peliculas y Series</a>
         </ul>
       </nav>
     </div>
@@ -58,7 +61,7 @@
             while ($row=mysqli_fetch_assoc($resultado)) {?>
         <div class="tarjeta">
           <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
-          <h4><?php echo $row['nombre'];?></h4>
+          <h3><?php echo $row['nombre'];?></h3>
           <p><?php echo $row['descripcion'];?></p>
           <div class="link">
             <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
@@ -68,9 +71,11 @@
         <?php }?>
         <?php mysqli_free_result($resultado);?>
       </form>
+      <a href="juegos.php">Ver Más</a>
     </div>
   </section>
-  
+
+
   <section id="donaciones">
     <div class="contenedor">
       <div class="donacion">
