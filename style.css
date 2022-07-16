@@ -153,6 +153,10 @@ body {
     justify-content: center;
   }
 
+  #pc .contenedor a {
+    font-size: 2.5rem;
+  }
+
   #pc .contenedor .card {
     display: flex;
     flex-direction: row;
