@@ -90,6 +90,10 @@ body {
     left: 100px;
   }
 
+  #menu_checkbox {
+    display: none;
+  }
+
   header .contenedor .icon_menu {
     display: none;
   }
