@@ -327,7 +327,12 @@ body {
 
   header .contenedor .menu_icon {
     position: absolute;
-    right: 10px;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 39px;
+    margin: 0 auto;
+    transform: translateY(-50%) scale(2);
   }
 
   header .contenedor .menu {
@@ -362,16 +367,6 @@ body {
 
   *:focus {
     outline: none;
-  }
-
-  #menu_icon {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    width: 39px;
-    margin: 0 auto;
-    transform: translateY(-50%) scale(2);
   }
 
   #menu_button {
