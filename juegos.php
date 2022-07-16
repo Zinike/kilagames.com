@@ -6,6 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Marcos Zingaretti">
+  <meta name="description" content="Los juegos que quieras, por el mejor precio: GRATIS">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
   <title>KilaGames</title>
@@ -15,6 +16,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173856593005932" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,13 +24,23 @@
   <header>
     <div class="contenedor">
       <img src="Media/logo.png" alt="logo">
-      <nav class="menu">
+
+      <div id="menu_icon" class="menu_icon">
+        <div id="menu_button">
+          <input type="checkbox" id="menu_checkbox">
+          <label for="menu_checkbox" id="menu_label">
+            <div id="menu_text_bar">
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <nav id="menu" class="menu">
         <ul>
-          <li>
-            <a href="/index.php">
-              <p>Volver<p>
-            </a>
-          </li>
+          <a href="#hero">Inicio</a>
+          <a href="#pc">PC</a>
+          <a href="#consolas">Consolas</a>
+          <a href="#peliculas">Peliculas y Series</a>
         </ul>
       </nav>
     </div>
@@ -64,8 +76,12 @@
 
   <section id="donaciones">
     <div class="contenedor">
+      <h2>Discord</h2>
+      <a href="https://discord.gg/8hF3GaTtUz">¡ENTRA AHORA!</a>
       <h2>Donaciones</h2>
-      <p>Gracias por visitarnos, si queres ayudarnos a que sigamos subiendo juegos podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
+      <h3>¡Gracias por visitarnos!</h3>
+      <p>Si queres ayudarnos a que sigamos subiendo juegos y seguir libre de anuncios molestos durante la descarga</p>
+      <p>podes contribuir al mantenimiento de nuestra pagina en el siguiente link</p>
       <a href="https://paypal.me/KilaGames?country.x=AR&locale.x=es_XC" target="_blank">Paypal</a>
     </div>
   </section>
@@ -75,8 +91,9 @@
       <p>KilaGames - Todos los derechos reservados</p>
     </div>
   </footer>
-</body>
 
-<script src="JS/menu.js"></script>
+  <script> src="script.js"></script>
+
+</body>
 
 </html>
