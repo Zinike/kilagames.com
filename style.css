@@ -121,8 +121,7 @@ body {
     justify-content: center;
     height: 50vh;
     width: 100vw;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 15px;
   }
 
   #hero .contenedor {
@@ -208,8 +207,7 @@ body {
     justify-content: center;
     height: auto;
     width: 100vw;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 15px;
   }
 
   #consolas .contenedor {
@@ -228,8 +226,7 @@ body {
     justify-content: center;
     height: auto;
     width: 100vw;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 15px;
   }
 
   #peliculas .contenedor {
