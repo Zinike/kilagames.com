@@ -344,7 +344,7 @@ body {
     transition: all 300ms;
   }
 
-  header .contenedor .menu .mostrar_menu {
+  header .contenedor .menu.mostrar_menu {
     height: 200px;
   }
 
