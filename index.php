@@ -17,6 +17,7 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173856593005932" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="style.css">
 </head>
 
