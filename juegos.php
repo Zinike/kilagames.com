@@ -35,12 +35,13 @@
         </div>
       </div>
 
-      <nav id="menu" class="menu">
+      <nav class="menu">
         <ul>
-          <a href="#hero">Inicio</a>
-          <a href="#pc">PC</a>
-          <a href="#consolas">Consolas</a>
-          <a href="#peliculas">Peliculas y Series</a>
+          <li>
+            <a href="/index.php">
+              <p>Volver<p>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
