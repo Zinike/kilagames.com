@@ -74,6 +74,7 @@
   <section id="donaciones">
     <div class="contenedor">
       <h2>Discord</h2>
+      <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
       <a href="https://discord.gg/8hF3GaTtUz">¡ENTRA AHORA!</a>
       <h2>Donaciones</h2>
       <h3>¡Gracias por visitarnos!</h3>
