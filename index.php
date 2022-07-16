@@ -53,10 +53,6 @@
     </div>
   </section>
 
-  <div class="discord">
-    <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-  </div>
-
   <section id="pc">
     <div class="contenedor">
       <h2>Juegos de PC</h2>
@@ -104,8 +100,9 @@
 
   <section id="donaciones">
     <div class="contenedor">
-      <h2>Discord</h2>
-      <a href="https://discord.gg/8hF3GaTtUz">¡ENTRA AHORA!</a>
+      <div class="discord">
+        <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
       <h2>Donaciones</h2>
       <h3>¡Gracias por visitarnos!</h3>
       <p>Si queres ayudarnos a que sigamos subiendo juegos y seguir libre de anuncios molestos durante la descarga</p>
