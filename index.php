@@ -16,6 +16,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173856593005932" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -116,7 +117,6 @@
   </footer>
 
   <script> src="script.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173856593005932" crossorigin="anonymous"></script>
 
 </body>
 
