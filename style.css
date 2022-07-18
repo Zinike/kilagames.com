@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-size: 1em;
-  color: grey;
+  color: #555555;
 }
 
 body {
@@ -27,6 +27,7 @@ body {
   background-image: url('Media/fondo.webp');
   background-repeat: repeat-y;
   background-size: contain;
+  background-position: center center;
   width: 100vw;
   display: flex;
   flex-direction: column;
