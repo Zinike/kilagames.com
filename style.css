@@ -266,6 +266,7 @@ body {
 
   #peliculas .contenedor .card .tarjeta p {
     font-size: .85rem;
+    max-height: 50%;
     width: auto;
     height: auto;
     text-overflow: ellipsis;
