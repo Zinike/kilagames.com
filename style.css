@@ -159,12 +159,9 @@ body {
 
   #pc .contenedor .card {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     text-align: center;
     background: #111;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
 
   #pc .contenedor .card .tarjeta {
@@ -238,12 +235,9 @@ body {
 
   #peliculas .contenedor .card {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     text-align: center;
     background: #111;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
 
   #peliculas .contenedor .card .tarjeta {
