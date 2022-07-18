@@ -57,13 +57,11 @@
     <div class="contenedor">
       <h1>Ingresa a tu cuenta</h1>
       <form class="" action="index.php" method="get">
-        <!-- USERNAME INPUT -->
         <label for="username">Usuario</label>
-        <input type="text" placeholder="Ingresa tu usuario">
-        <!-- PASSWORD INPUT -->
+        <input type="text" placeholder="Ingresa tu usuario"><br>
         <label for="password">Contraseña</label>
         <input type="password" placeholder="Ingresa tu contraseña">
-        <input type="submit" value="Log In">
+        <input type="submit" value="Entrar">
         <a href="#">Olvidaste tu contraseña?</a><br>
         <a href="#">No tenes cuenta?</a>
       </form>
