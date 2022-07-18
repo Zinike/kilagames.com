@@ -407,7 +407,7 @@ body {
     position: absolute;
     top: 50%;
     right: 50px;
-    width: 20px;
+    width: 15px;
     transform: translateY(-50%) scale(2);
   }
 
