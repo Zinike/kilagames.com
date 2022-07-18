@@ -38,10 +38,7 @@
 
       <nav id="menu" class="menu">
         <ul>
-          <a href="#hero">Inicio</a>
-          <a href="#pc">PC</a>
-          <a href="#consolas">Consolas</a>
-          <a href="#peliculas">Peliculas y Series</a>
+          <a href="/index.php">Volver</a>
         </ul>
       </nav>
     </div>
@@ -58,7 +55,7 @@
     <div class="contenedor">
       <h2>Juegos de PC</h2>
       <form class="pc-games card">
-        <?php $resultado = mysqli_query($conn, $pclimited);
+        <?php $resultado = mysqli_query($conn, $peliculas);
             while ($row=mysqli_fetch_assoc($resultado)) {?>
         <div class="tarjeta">
           <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
@@ -76,27 +73,6 @@
     </div>
   </section>
 
-  <section id="peliculas">
-    <div class="contenedor">
-      <h2>Peliculas y Series</h2>
-      <form class="peliculas-series card" action="index.html" method="post">
-        <?php $resultado = mysqli_query($conn, $peliculaslimited);
-            while ($row=mysqli_fetch_assoc($resultado)) {?>
-        <div class="tarjeta">
-          <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
-          <h3><?php echo $row['nombre'];?></h3>
-          <p><?php echo $row['descripcion'];?></p>
-          <div class="link">
-            <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
-            <p>Contraseña: <?php echo $row['contraseña'];?></p>
-          </div>
-        </div>
-        <?php }?>
-        <?php mysqli_free_result($resultado);?>
-      </form>
-      <a href="peliculas.php">Ver Más</a>
-    </div>
-  </section>
 
   <section id="donaciones">
     <div class="contenedor">
@@ -124,4 +100,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>
