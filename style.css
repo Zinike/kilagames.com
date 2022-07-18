@@ -285,7 +285,7 @@ body {
     flex-direction: column;
   }
 
-  #donaciones {
+  #social {
     display: flex;
     align-items: center;
     align-content: center;
@@ -296,7 +296,7 @@ body {
     margin-right: 10px;
   }
 
-  #donaciones .contenedor {
+  #social .contenedor {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 15px;
     display: flex;
@@ -306,7 +306,7 @@ body {
     margin: 0 15px 0 15px;
   }
 
-  #donaciones .contenedor .donacion {
+  #social .contenedor .donacion {
     padding: 125px 25px 125px 25px;
     height: 500px;
     width: 350px;
@@ -317,7 +317,7 @@ body {
     justify-content: space-around;
   }
 
-  #donaciones .contenedor .donacion p {
+  #social .contenedor .donacion p {
     display: flex;
     text-align: center;
     align-items: center;
@@ -614,7 +614,7 @@ body {
     justify-content: center;
   }
 
-  #donaciones {
+  #social {
     display: flex;
     align-items: center;
     align-content: center;
@@ -625,7 +625,7 @@ body {
     margin-right: 10px;
   }
 
-  #donaciones .contenedor {
+  #social .contenedor {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 15px;
     display: flex;

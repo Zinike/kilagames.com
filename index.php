@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <section id="donaciones">
+    <section id="social">
       <div class="contenedor">
         <div class="donacion">
           <h2>Donaciones</h2>
