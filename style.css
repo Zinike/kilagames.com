@@ -190,7 +190,7 @@ body {
 
   #pc .contenedor .card .tarjeta .texto p {
     font-size: .85rem;
-    max-height: 70%;
+    max-height: 65%;
     min-height: 60%;
     width: auto;
     height: auto;
@@ -268,7 +268,7 @@ body {
 
   #peliculas .contenedor .card .tarjeta .texto p {
     font-size: .85rem;
-    max-height: 70%;
+    max-height: 65%;
     min-height: 60%;
     width: auto;
     height: auto;
