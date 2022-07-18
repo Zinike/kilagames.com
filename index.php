@@ -39,8 +39,8 @@
           <ul>
             <a href="#hero">Inicio</a>
             <a href="#pc">PC</a>
-            <a href="#consolas">Consolas</a>
             <a href="#peliculas">Peliculas y Series</a>
+            <a href="#social">Social</a>
           </ul>
         </nav>
       </div>
