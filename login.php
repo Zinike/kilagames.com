@@ -56,17 +56,20 @@
   <section id="login">
     <div class="contenedor">
       <h2>Ingresa a tu cuenta</h2>
-      <form class="" action="index.php" method="get">
+      <?php include("controlador.php"); ?>
+      <form class="" action="index.php" method="post">
         <label for="username">Usuario</label>
-        <input type="text" placeholder="Ingresa tu usuario"><br>
+        <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
         <label for="password">Contraseña</label>
-        <input type="password" placeholder="Ingresa tu contraseña">
-        <input type="submit" value="Entrar"><br>
+        <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
+        <input type="submit" value="Entrar" name="login-button"><br>
         <a href="#">Olvidaste tu contraseña?</a><br>
         <a href="#">No tenes cuenta?</a>
       </form>
     </div>
   </section>
+
+
 
   <footer>
     <div class="contenedor">
