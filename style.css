@@ -539,7 +539,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: 70vh;
+    height: auto;
     width: 100vw;
     margin-left: 10px;
     margin-right: 10px;
@@ -549,25 +549,27 @@ body {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 15px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
+  #pc .contenedor a {
+    font-size: 2.5rem;
+  }
+
   #pc .contenedor .card {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     text-align: center;
-    background: #111111;
-    justify-content: center;
-    align-items: center;
+    background: #111;
+    flex-direction: row;
   }
 
   #pc .contenedor .card .tarjeta {
     position: relative;
     overflow: hidden;
-    height: 400px;
+    height: 480px;
     width: 200px;
     max-height: 600px;
     max-width: 400px;
@@ -575,6 +577,7 @@ body {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   #pc .contenedor .card .tarjeta img {
@@ -582,26 +585,39 @@ body {
     height: 60%;
   }
 
-  #pc .contenedor .card .tarjeta p {
-    font-size: .65rem;
+  #pc .contenedor .card .tarjeta .texto {
+    width: auto;
+    height: 40%;
+  }
+
+  #pc .contenedor .card .tarjeta .texto p {
+    font-size: .85rem;
+    max-height: 65%;
+    min-height: 60%;
     width: auto;
     height: auto;
     text-overflow: ellipsis;
     overflow: hidden;
   }
 
-  #pc .contenedor .card .tarjeta .link {
-    border-top: 1px solid white;
+  #pc .contenedor .card .tarjeta .texto .link {
     display: flex;
     flex-direction: column;
+    align-content: flex-end;
+  }
+
+  #pc .contenedor .card .tarjeta .texto .link a {
+    font-size: 1.25rem;
+    border-top: 1px solid white;
   }
 
   #peliculas {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: 70vh;
+    height: auto;
     width: 100vw;
     margin-left: 10px;
     margin-right: 10px;
@@ -611,9 +627,68 @@ body {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 15px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  #peliculas .contenedor a {
+    font-size: 2.5rem;
+  }
+
+  #peliculas .contenedor .card {
+    display: flex;
+    text-align: center;
+    background: #111;
+    flex-direction: row;
+  }
+
+  #peliculas .contenedor .card .tarjeta {
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+    width: 200px;
+    max-height: 600px;
+    max-width: 400px;
+    margin: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #peliculas .contenedor .card .tarjeta img {
+    width: auto;
+    height: 60%;
+  }
+
+  #peliculas .contenedor .card .tarjeta .texto {
+    width: auto;
+    height: 40%;
+  }
+
+  #peliculas .contenedor .card .tarjeta .texto p {
+    font-size: .85rem;
+    max-height: 65%;
+    min-height: 60%;
+    width: auto;
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  #peliculas .contenedor .card .tarjeta .texto .link {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+  #peliculas .contenedor .card .tarjeta .texto .link a {
+    font-size: 1.25rem;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
   }
 
   #social {
