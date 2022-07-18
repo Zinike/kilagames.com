@@ -53,7 +53,7 @@
   <section id="login">
     <div class="contenedor">
       <h2>Ingresa a tu cuenta</h2>
-      <?php include("controlador.php"); ?>
+      
       <form class="form-login" action="index.php" method="post">
         <label for="username">Usuario</label>
         <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
