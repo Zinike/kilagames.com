@@ -178,11 +178,17 @@ body {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   #pc .contenedor .card .tarjeta img {
     width: auto;
     height: 60%;
+  }
+
+  #pc .contenedor .card .tarjeta .texto {
+    width: auto;
+    height: 40%;
   }
 
   #pc .contenedor .card .tarjeta p {
@@ -253,6 +259,7 @@ body {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   #peliculas .contenedor .card .tarjeta img {
