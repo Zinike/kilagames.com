@@ -190,8 +190,8 @@ body {
 
   #pc .contenedor .card .tarjeta .texto p {
     font-size: .85rem;
-    max-height: 60%;
-    min-height: 50%;
+    max-height: 70%;
+    min-height: 60%;
     width: auto;
     height: auto;
     text-overflow: ellipsis;
@@ -268,8 +268,8 @@ body {
 
   #peliculas .contenedor .card .tarjeta .texto p {
     font-size: .85rem;
-    max-height: 60%;
-    min-height: 50%;
+    max-height: 70%;
+    min-height: 60%;
     width: auto;
     height: auto;
     text-overflow: ellipsis;
