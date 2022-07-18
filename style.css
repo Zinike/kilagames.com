@@ -696,26 +696,38 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    flex-direction: column;
-    height: auto;
+    height: 70vh;
     width: 100vw;
-    margin: 15px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   #social .contenedor {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 15px;
-    margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 15px 0 15px;
   }
 
   #social .contenedor .donacion {
+    padding: 125px 25px 125px 25px;
+    height: 500px;
+    width: 350px;
+    color: #fe2020;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+  }
+
+  #social .contenedor .donacion p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
     justify-content: center;
   }
 
