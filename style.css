@@ -754,66 +754,12 @@ body {
 
 
 
-KEYFRAMES
+KEYFRAMES & MORE
 
 
 
 
 */
-@keyframes moveUpThenDown {
-  0% {
-    top: 0;
-  }
-
-  50% {
-    top: -27px;
-  }
-
-  100% {
-    top: -14px;
-  }
-}
-
-@keyframes shakeWhileMovingUp {
-  0% {
-    transform: rotateZ(0);
-  }
-
-  25% {
-    transform: rotateZ(-10deg);
-  }
-
-  50% {
-    transform: rotateZ(0deg);
-  }
-
-  75% {
-    transform: rotateZ(10deg);
-  }
-
-  100% {
-    transform: rotateZ(0);
-  }
-}
-
-@keyframes shakeWhileMovingDown {
-  0% {
-    transform: rotateZ(0);
-  }
-
-  80% {
-    transform: rotateZ(3deg);
-  }
-
-  90% {
-    transform: rotateZ(-3deg);
-  }
-
-  100% {
-    transform: rotateZ(0);
-  }
-}
-
 button, button::after {
   width: 380px;
   height: 86px;
@@ -907,5 +853,59 @@ button:hover::after {
   100% {
     clip-path: var(--slice-1);
     transform: translate(0);
+  }
+}
+
+@keyframes moveUpThenDown {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: -27px;
+  }
+
+  100% {
+    top: -14px;
+  }
+}
+
+@keyframes shakeWhileMovingUp {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  50% {
+    transform: rotateZ(0deg);
+  }
+
+  75% {
+    transform: rotateZ(10deg);
+  }
+
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes shakeWhileMovingDown {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  80% {
+    transform: rotateZ(3deg);
+  }
+
+  90% {
+    transform: rotateZ(-3deg);
+  }
+
+  100% {
+    transform: rotateZ(0);
   }
 }
