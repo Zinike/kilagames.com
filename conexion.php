@@ -9,4 +9,6 @@ $peliculaslimited="SELECT * FROM `peliculas` LIMIT 5";
 
 $pclimited = "SELECT * FROM `pc` LIMIT 5";
 $pc = "SELECT * FROM `pc`";
+
+$tienda = "SELECT * FROM `tienda`";
 ?>
