@@ -185,12 +185,6 @@ body {
     height: 60%;
   }
 
-  #pc .contenedor .card .tarjeta .link {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-  }
-
   #pc .contenedor .card .tarjeta p {
     font-size: .85rem;
     width: auto;
@@ -199,7 +193,13 @@ body {
     overflow: hidden;
   }
 
-  #pc .contenedor .card .tarjeta a {
+  #pc .contenedor .card .tarjeta .link {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+  #pc .contenedor .card .tarjeta .link a {
     font-size: 1.25rem;
     border-top: 1px solid white;
     display: flex;
@@ -268,7 +268,13 @@ body {
     overflow: hidden;
   }
 
-  #peliculas .contenedor .card .tarjeta a {
+  #peliculas .contenedor .card .tarjeta .link {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+  #peliculas .contenedor .card .tarjeta .link a {
     font-size: 1.25rem;
     border-top: 1px solid white;
     display: flex;
