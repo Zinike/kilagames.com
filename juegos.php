@@ -69,7 +69,6 @@
         <?php }?>
         <?php mysqli_free_result($resultado);?>
       </form>
-      <a href="juegos.php">Ver Más</a>
     </div>
   </section>
 
