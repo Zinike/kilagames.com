@@ -72,6 +72,7 @@
         <?php }?>
         <?php mysqli_free_result($resultado);?>
       </form>
+      <p>ESTO ES TODO, POR AHORA</p>
     </div>
   </section>
 
