@@ -697,7 +697,7 @@ body {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: auto;
     width: 100vw;
     margin-left: 10px;
     margin-right: 10px;
