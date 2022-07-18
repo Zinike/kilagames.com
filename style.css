@@ -641,7 +641,7 @@ body {
     display: flex;
     text-align: center;
     background: #111;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   #peliculas .contenedor .card .tarjeta {
@@ -696,6 +696,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
     height: 70vh;
     width: 100vw;
     margin-left: 10px;
