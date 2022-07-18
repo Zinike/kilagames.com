@@ -55,7 +55,7 @@
 
   <section id="login">
     <div class="contenedor">
-      <h1>Ingresa a tu cuenta</h1>
+      <h2>Ingresa a tu cuenta</h2>
       <form class="" action="index.php" method="get">
         <label for="username">Usuario</label>
         <input type="text" placeholder="Ingresa tu usuario"><br>
