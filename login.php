@@ -61,7 +61,7 @@
         <input type="text" placeholder="Ingresa tu usuario"><br>
         <label for="password">Contraseña</label>
         <input type="password" placeholder="Ingresa tu contraseña">
-        <input type="submit" value="Entrar">
+        <input type="submit" value="Entrar"><br>
         <a href="#">Olvidaste tu contraseña?</a><br>
         <a href="#">No tenes cuenta?</a>
       </form>
