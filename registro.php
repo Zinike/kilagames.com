@@ -52,7 +52,7 @@
       </div>
     </section>
 
-    <section id="register">
+    <section id="login-register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
         <form method="post" autocomplete="off">
