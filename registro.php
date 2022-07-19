@@ -55,9 +55,11 @@
     <section id="register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
-        <form  method="post" name="register_form">
+        <form method="post" name="register_form">
 
-
+          <?php
+          
+          ?>
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
 
           <input type="text" placeholder="Ingresa tu apellido" name="apellido"><br>
