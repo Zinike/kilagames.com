@@ -11,18 +11,17 @@ if (isset($_POST['register'])) {
 
 	    $resultado = mysqli_query($conexion,$consulta);
 	    if ($resultado) {
-        echo "todo bien";
 	    	?>
-	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
+	    	<h3>¡Te has registrado correctamente!</h3>
            <?php
 	    } else {
 	    	?>
-	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
+	    	<h3>¡Ups ha ocurrido un error!</h3>
            <?php
 	    }
     }   else {
 	    	?>
-	    	<h3 class="bad">¡Por favor complete los campos!</h3>
+	    	<h3>¡Por favor complete los campos!</h3>
            <?php
     }
 }
