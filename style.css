@@ -927,4 +927,13 @@ button:hover::after {
   margin: 15px 15px;
 }
 
-#login-register .contenedor {}
+#login-register .contenedor form {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  margin: 15px 10px;
+}
