@@ -51,6 +51,10 @@
 
         <form method="post">
 
+          <?php
+          include("controlador.php");
+          ?>
+
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
 
           <input type="text" placeholder="Ingresa tu apellido" name="apellido"><br>
@@ -62,10 +66,6 @@
           <input type="submit" value="Crear" name="login-button"><br>
         </form>
 
-        <?php
-        include("controlador.php");
-        ?>
-        
       </div>
     </section>
 
