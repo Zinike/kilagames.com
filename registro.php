@@ -58,7 +58,7 @@
         <form method="post" name="register_form">
 
           <?php
-          
+          include("config.php");
           ?>
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
 
