@@ -57,9 +57,6 @@
         <h2>Crea tu cuenta</h2>
         <form  action="registro.php" method="get" name="register_form">
 
-          <?php
-          include("controlador.php");
-          ?>
 
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
 
