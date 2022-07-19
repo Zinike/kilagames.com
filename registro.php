@@ -45,13 +45,6 @@
       </div>
     </header>
 
-    <section id="hero">
-      <div class="contenedor">
-        <h1>KilaGames</h1><br>
-        <h2>Tu sitio de juegos</h2>
-      </div>
-    </section>
-
     <section id="register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
