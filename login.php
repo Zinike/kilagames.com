@@ -54,12 +54,11 @@
     <div class="contenedor">
       <h2>Ingresa a tu cuenta</h2>
       <form class="form-login" action="" method="post">
-
         <label for="username">Usuario</label>
-        <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
+        <input type="text" name="usuario" placeholder="Ingresa tu usuario"><br>
         <label for="password">Contraseña</label>
-        <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
-        <input type="submit" value="Entrar" name="login-button"><br>
+        <input type="password" name="contraseña" placeholder="Ingresa tu contraseña">
+        <input type="submit" name="login-button" value="Entrar" ><br>
         <a href="#">Olvidaste tu contraseña?</a><br>
         <a href="#">No tenes cuenta?</a>
       </form>
