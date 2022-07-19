@@ -3,9 +3,12 @@
 include("conexion.php");
 
 if (isset($_POST['register'])) {
-    if (strlen($_POST['usuario']) >= 1 && strlen($_POST['contraseña']) >= 1) {
+    if (strlen($_POST['usuario']) >= 8 && strlen($_POST['contraseña']) >= 8) {
 	    $usuario = trim($_POST['usuario']);
 	    $contraseña = trim($_POST['contraseña']);
+
+      $usuario = mysqli_real_escape_string($conn, $usuario);
+	    $contraseña = mysqli_real_escape_string($conn, $contraseña);
 
 	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
 
