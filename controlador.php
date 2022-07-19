@@ -29,8 +29,4 @@ if (isset($_POST["register"])) {
     <?php
   }
 }
-else {
-  echo "nada"
-}
-
 ?>
