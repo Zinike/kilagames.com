@@ -8,12 +8,15 @@ if (isset($_POST["register"])) {
     $apellido = trim($_POST['apellido']);
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
+
     $consulta = "INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `usuario`, `contraseña`) VALUES (NULL, '$nombre', '$apellido', '$usuario', '$contraseña')";
+
     $resultado = mysqli_query($conexion,$consulta);
+
     if ($resultado) {
 	    	?>
 	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
-           <?php
+        <?php
     } else {
 	    	?>
 	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
@@ -25,6 +28,9 @@ if (isset($_POST["register"])) {
     <h3 class="bad">¡COMPLETA LOS CAMPOS!</h3>
     <?php
   }
+}
+else {
+  echo "nada"
 }
 
 ?>
