@@ -13,7 +13,9 @@ if (isset($_POST["login-button"])){
     $resultado = mysqlquery($conexion, $consulta);
 
     if ($resultado) {
-      echo '<h3>Gracias por unirte!</h3>'
+      echo '<h3>¡Gracias por unirte!</h3>'
+    } else {
+      echo '<h3>Paso algo mal</h3>'
     }
 
 
