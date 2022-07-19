@@ -72,7 +72,7 @@
           <label for="password">Contraseña</label>
           <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
 
-          <input type="submit" value="Entrar" name="login-button"><br>
+          <input type="submit" value="Crear" name="login-button"><br>
         </form>
 
       </div>

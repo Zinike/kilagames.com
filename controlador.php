@@ -14,7 +14,7 @@ if (isset($_POST["login-button"])){
 
     $consulta = "INSERT INTO usuarios(nombre,apellido,usuario,contraseña) VALUES ('$nombre','$apellido','$usuario','$contraseña')"
 
-    $resultado = mysqlquery($conexion, $consulta);
+    $resultado = mysql_query($conexion, $consulta);
 
     if ($resultado) {
       ?>
