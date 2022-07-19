@@ -7,12 +7,19 @@ if (isset($_POST['login-register'])) {
 	    $usuario = trim($_POST['usuario']);
 	    $contraseña = trim($_POST['contraseña']);
 
+      // ELIMINACION DE INJECCION
       $usuario = mysqli_real_escape_string($conn, $usuario);
 	    $contraseña = mysqli_real_escape_string($conn, $contraseña);
 
+      // VERIFICAION DE USUARIO
+      $contejamiento = "SELECT FROM usuarios  WHERE usuario=$usuario";
+      $verificar_usuario = mysqli_query($conexion,$cotejamiento);
+
+      // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
 	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
 
 	    $resultado = mysqli_query($conexion,$consulta);
+      
 	    if ($resultado) {
 	    	?>
 	    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
