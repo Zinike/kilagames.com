@@ -55,8 +55,11 @@
     <section id="register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
-
         <form method="post">
+
+          <?php
+          include("controlador.php");
+          ?>
 
 
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
@@ -69,7 +72,6 @@
 
           <input type="submit" value="Crear" name="login-button"><br>
         </form>
-
       </div>
     </section>
 
