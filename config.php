@@ -28,5 +28,6 @@ if (isset($_POST['register'])) {
     }
 }
 mysqli_free_result($resultado);
+mysqli_close($conn);
 
 ?>
