@@ -17,13 +17,13 @@ if (isset($_POST['register'])) {
 	    } else {
 	    	?>
 	    	<h3>¡Ups ha ocurrido un error!</h3>
-           <?php
+        <?php
 	    }
-    }   else {
+    } else {
 	    	?>
 	    	<h3>¡Por favor complete los campos!</h3>
-           <?php
-    }
+        <?php
+  }
 }
 
 ?>
