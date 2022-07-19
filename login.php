@@ -60,8 +60,7 @@
         <label for="password">Contraseña</label>
         <input type="password" name="contraseña" placeholder="Ingresa tu contraseña">
         <input type="submit" name="login-button" value="Entrar" ><br>
-        <a href="#">Olvidaste tu contraseña?</a><br>
-        <a href="#">No tenes cuenta?</a>
+        <a href="registro.php">No tenes cuenta?</a>
       </form>
     </div>
   </section>

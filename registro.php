@@ -66,8 +66,7 @@
         <label for="password">Contraseña</label>
         <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
         <input type="submit" value="Entrar" name="login-button"><br>
-        <a href="#">Olvidaste tu contraseña?</a><br>
-        <a href="#">No tenes cuenta?</a>
+
       </form>
     </div>
   </section>
