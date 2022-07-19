@@ -17,7 +17,7 @@ if (isset($_POST["login-button"])) {
     } else {
 	    	?>
 	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
-        <?phpW
+        <?php
     } else {
 	    	?>
 	    	<h3 class="bad">¡Por favor complete los campos!</h3>
