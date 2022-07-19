@@ -55,7 +55,7 @@
     <section id="register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
-        <form method="post">
+        <form method="post" name="register_form">
 
           <?php
           include("controlador.php");
