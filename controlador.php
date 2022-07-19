@@ -18,7 +18,7 @@ if (isset($_POST["login-button"])){
       <?php
       } else {
       ?>
-      <h3>Paso algo mal</h3>
+      <h3>Algo salió mal</h3>
       <?php
   }
 }
