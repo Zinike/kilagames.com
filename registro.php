@@ -60,7 +60,7 @@
           <?php
           include("config.php");
           ?>
-          
+
           <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
 
           <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
