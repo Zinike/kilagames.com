@@ -1,7 +1,9 @@
 <?php
 
 include("conexion.php");
-
+if($conn){
+  echo "todo bien";
+}
 if (isset($_POST['register'])) {
     if (strlen($_POST['usuario']) >= 1 && strlen($_POST['contraseña']) >= 1) {
 	    $name = trim($_POST['usuario']);
