@@ -8,7 +8,9 @@ if (isset($_POST["login-button"])) {
     $apellido = trim($_POST['apellido']);
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
-
+    
+    $resultado = mysqli_query($conexion,$consulta);
+    if ($resultado) {
 	    	?>
 	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
            <?php
