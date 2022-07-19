@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
 
   <?php
-  include("conexion.php"); 
+  include("conexion.php");
   ?>
 
   <head>
@@ -65,7 +65,6 @@
           <label for="password">Contraseña</label>
           <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
           <input type="submit" value="Entrar" name="login-button"><br>
-
         </form>
         <?php include("controlador.php"); ?>
       </div>
