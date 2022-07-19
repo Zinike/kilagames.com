@@ -54,7 +54,7 @@
     <div class="contenedor">
       <h2>Crea tu cuenta</h2>
       <?php include("controlador.php"); ?>
-      <form class="form-login" action="index.php" method="post">
+      <form class="form-register" action="ndex.php" method="post">
         <label for="username">Usuario</label>
         <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
         <label for="password">Contraseña</label>
