@@ -4,7 +4,7 @@ include("conexion.php");
 if (isset($_POST["login-button"])){
   if (empty($_POST["usuario"]) and empty($_POST["contraseña"])) {
     ?><?php
-    <div class="error"><p>RELLENAR LOS CAMPOS</p></div>
+    <div><p>RELLENAR LOS CAMPOS</p></div>
     ?><?php
   } else {
     $usuario = trim$_POST["usuario"];
