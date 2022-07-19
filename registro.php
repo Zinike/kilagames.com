@@ -55,6 +55,12 @@
       <h2>Crea tu cuenta</h2>
       <?php include("controlador.php"); ?>
       <form class="form-register" action="ndex.php" method="post">
+        <label for="username">Nombre</label>
+        <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
+        <label for="username">Apellido</label>
+        <input type="text" placeholder="Ingresa tu apellido" name="apellido"><br>
+
+
         <label for="username">Usuario</label>
         <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
         <label for="password">Contraseña</label>
