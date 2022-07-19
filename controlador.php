@@ -9,7 +9,11 @@ if (isset($_POST["login-button"])) {
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
 
-    
+    $consulta = "INSERT INTO usuarios(nombre,apellido,usuario,contraseña) VALUES ('$nombre','$apellido','$usuario','$contraseña')";
+
+    $resultado = mysqli_query($conexion,$consulta);
+
+  
   }
 }
 
