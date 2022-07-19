@@ -69,7 +69,7 @@
 
           <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
 
-          <input type="submit" value="Crear" name="login-button"><br>
+          <input type="submit" value="Crear" name="register"><br>
         </form>
       </div>
     </section>
