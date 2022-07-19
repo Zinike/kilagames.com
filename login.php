@@ -56,7 +56,11 @@
       <div class="contenedor">
         <h2>Ingresa a tu cuenta</h2>
         <form class="form-login" method="post">
-          
+
+          <?php
+          include("config.php");
+          ?>
+
           <label for="username">Usuario</label>
           <input type="text" name="usuario" placeholder="Ingresa tu usuario"><br>
 
