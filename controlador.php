@@ -8,17 +8,17 @@ if (isset($_POST["login-button"])) {
     $apellido = trim($_POST['apellido']);
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
-    $resultado = $conexion->query("INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `usuario`, `contraseña`) VALUES (NULL, '$nombre', '$apellido', '$usuario', '$contraseña')");
-
+    $consulta = "INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `usuario`, `contraseña`) VALUES (NULL, '$nombre', '$apellido', '$usuario', '$contraseña');"
+    $resultado = mysqli_query($conexion,$consulta);
     if ($resultado) {
 	    	?>
 	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
-        <?php
+           <?php
     } else {
 	    	?>
 	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
         <?php
-	  }else {
+    }else {
 	    	?>
 	    	<h3 class="bad">¡Por favor complete los campos!</h3>
         <?php
