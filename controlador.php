@@ -2,7 +2,7 @@
 include("conexion.php");
 
 if (isset($_POST["login-button"])){
-  if (empty($_POST["usuario"]) and empty($_POST["contraseña"])) {
+  if (empty($_POST["usuario"]) && empty($_POST["contraseña"])) {
     ?>
     <div><p>RELLENAR LOS CAMPOS</p></div>
     <?php
