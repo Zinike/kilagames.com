@@ -8,8 +8,8 @@ if (isset($_POST["login-button"])) {
     $apellido = trim($_POST['apellido']);
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
-    $consulta = "INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `usuario`, `contraseña`) VALUES (NULL, '$nombre', '$apellido', '$usuario', '$contraseña')";
-    $resultado = mysqli_query($conexion,$consulta);
+    $resultado = $conexion->query("INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `usuario`, `contraseña`) VALUES (NULL, '$nombre', '$apellido', '$usuario', '$contraseña')");
+
     if ($resultado) {
 	    	?>
 	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
