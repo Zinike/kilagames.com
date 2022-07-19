@@ -3,9 +3,9 @@ include("conexion.php");
 
 if (isset($_POST["login-button"])){
   if (empty($_POST["usuario"]) and empty($_POST["contraseña"])) {
-    ?><?php
+    ?>
     <div><p>RELLENAR LOS CAMPOS</p></div>
-    ?><?php
+    <?php
   } else {
     $usuario = trim$_POST["usuario"];
     $contraseña = trim$_POST["contraseña"];
@@ -15,13 +15,13 @@ if (isset($_POST["login-button"])){
     $resultado = mysqlquery($conexion, $consulta);
 
     if ($resultado) {
-      ?><?php
+      ?>
       <h3>¡Gracias por unirte!</h3>
-      ?><?php
+      <?php
     } else {
-      ?><?php
+      ?>
       <h3>Paso algo mal</h3>
-      ?><?php
+      <?php
     }
   }
 }
