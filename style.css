@@ -934,6 +934,6 @@ button:hover::after {
   justify-content: center;
   flex-direction: column;
   height: auto;
-  width: 100vw;
+  width: auto;
   margin: 15px 10px;
 }
