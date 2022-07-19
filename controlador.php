@@ -17,6 +17,6 @@ if (isset($_POST["login-button"])){
     } else {
       echo '<h3>Paso algo mal</h3>'
     }
-}
+  }
 }
 ?>
