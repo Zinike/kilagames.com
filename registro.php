@@ -55,7 +55,8 @@
     <section id="register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
-        <form class="form-register" action="index.php" method="post">
+        <?php include("controlador.php"); ?>
+        <form class="form-register" method="post">
           <label for="username">Nombre</label>
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
           <label for="username">Apellido</label>
@@ -66,7 +67,7 @@
           <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
           <input type="submit" value="Entrar" name="login-button"><br>
         </form>
-        <?php include("controlador.php"); ?>
+
       </div>
     </section>
 
