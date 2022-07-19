@@ -9,9 +9,6 @@ if (isset($_POST["login-button"])) {
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
 
-
-
-    if ($resultado) {
 	    	?>
 	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
            <?php
