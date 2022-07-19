@@ -9,7 +9,7 @@ if (isset($_POST["register"])) {
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
 
-    $consulta = "UPDATE `usuarios` SET `id`='NULL',`nombre`='$nombre',`apellido`='$apellido',`usuario`='$usuario',`contraseña`='$contraseña' WHERE 1";
+    $consulta = "UPDATE `usuarios` SET `id`='NULL',`nombre`='$nombre',`apellido`='$apellido',`usuario`='$usuario',`contraseña`='$contraseña'";
     //$consulta = "INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `usuario`, `contraseña`) VALUES (NULL, '$nombre', '$apellido', '$usuario', '$contraseña')";
 
     $resultado = mysqli_query($conexion,$consulta);
