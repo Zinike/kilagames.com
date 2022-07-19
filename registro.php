@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
 
-  <?php include("conexion.php"); ?>
+  <?php
+  include("conexion.php"); 
+  ?>
 
   <head>
     <meta charset="utf-8">
@@ -50,10 +52,9 @@
       </div>
     </section>
 
-    <section id="login">
+    <section id="register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
-
         <form class="form-register" action="index.php" method="post">
           <label for="username">Nombre</label>
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
