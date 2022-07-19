@@ -9,11 +9,11 @@ if (isset($_POST['register'])) {
 
 	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
 
-	    $resultado = mysqli_query($conexion,$consulta);
+	    $resultado = mysqli_query($conn,$consulta);
 	    if ($resultado) {
 	    	?>
 	    	<h3>¡Te has registrado correctamente!</h3>
-           <?php
+        <?php
 	    } else {
 	    	?>
 	    	<h3>¡Ups ha ocurrido un error!</h3>
