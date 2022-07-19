@@ -3,10 +3,6 @@ include("conexion.php");
 
 if (isset($_POST["login-button"])){
   if (strlen($_POST['nombre']) >= 1 && strlen($_POST['apellido']) >= 1 && strlen($_POST['usuario']) >= 1 && strlen($_POST['contraseña']) >= 1){
-    ?>
-    <div><p>RELLENAR LOS CAMPOS</p></div>
-    <?php
-  } else {
     $nombre = trim($_POST['nombre');
     $apellido = trim($_POST['apellido']);
     $usuario = trim($_POST['usuario']);
@@ -20,11 +16,15 @@ if (isset($_POST["login-button"])){
       ?>
       <h3>¡Gracias por unirte!</h3>
       <?php
-    } else {
+
+      } else {
       ?>
       <h3>Paso algo mal</h3>
       <?php
     }
+    ?>
+    <div><p>RELLENAR LOS CAMPOS</p></div>
+    <?php
   }
 }
 ?>
