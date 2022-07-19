@@ -55,7 +55,7 @@
     <section id="register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
-        <form method="post" name="register_form">
+        <form method="post">
 
           <?php
           include("config.php");
@@ -68,6 +68,8 @@
           <input type="password" placeholder="Ingresa tu contraseña" name="contraseña"><br>
 
           <input type="submit" value="Crear" name="register"><br>
+
+          <a href="registro.php">¿Ya tenes cuenta?</a>
         </form>
       </div>
     </section>

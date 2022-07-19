@@ -55,7 +55,7 @@
     <section id="login">
       <div class="contenedor">
         <h2>Ingresa a tu cuenta</h2>
-        <form class="form-login" method="post">
+        <form method="post">
 
           <?php
           include("config.php");
@@ -71,7 +71,6 @@
 
           <a href="registro.php">¿No tenes cuenta?</a>
         </form>
-
       </div>
     </section>
 
