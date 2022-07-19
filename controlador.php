@@ -13,20 +13,19 @@ if (isset($_POST["register"])) {
 
     $resultado = mysqli_query($conexion,$consulta);
 
-    if ($resultado) {
-	    	?>
-	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
+        if ($resultado) {
+    	    	?>
+    	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
+            <?php
+        } else {
+    	    	?>
+    	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
+            <?php
+        }
+      else{
+        ?>
+        <h3 class="bad">¡COMPLETA LOS CAMPOS!</h3>
         <?php
-    } else {
-	    	?>
-	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
-        <?php
-    }
-  }
-  else{
-    ?>
-    <h3 class="bad">¡COMPLETA LOS CAMPOS!</h3>
-    <?php
   }
 }
 ?>
