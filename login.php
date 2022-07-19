@@ -65,7 +65,7 @@
           <input type="text" name="usuario" placeholder="Ingresa tu usuario"><br>
 
           <label for="password">Contraseña</label>
-          <input type="password" name="contraseña" placeholder="Ingresa tu contraseña">
+          <input type="password" name="contraseña" placeholder="Ingresa tu contraseña"><br>
 
           <input type="submit" name="login-button" value="Entrar"><br>
 
