@@ -23,7 +23,7 @@ if (isset($_POST['register'])) {
 	    	?>
 	    	<h3>¡Por favor complete los campos!</h3>
         <?php
-  }
+    }
 }
 
 ?>
