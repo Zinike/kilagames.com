@@ -16,10 +16,12 @@ if (isset($_POST["login-button"])){
       ?>
       <h3>¡Gracias por unirte!</h3>
       <?php
-      } else {
+      }
+      else {
       ?>
       <h3>Algo salió mal</h3>
       <?php
   }
+}
 }
 ?>
