@@ -11,6 +11,7 @@ if (isset($_POST['register'])) {
 	    $consulta = "INSERT INTO usuarios(nombre, email) VALUES ('$usuario','$contraseña')";
 	    $resultado = mysqli_query($conexion,$consulta);
 	    if ($resultado) {
+        echo "todo bien";
 	    	?>
 	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
            <?php
