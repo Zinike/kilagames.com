@@ -62,16 +62,12 @@
           include("controlador.php");
           ?>
 
-          <label for="username">Nombre</label>
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
 
-          <label for="username">Apellido</label>
           <input type="text" placeholder="Ingresa tu apellido" name="apellido"><br>
 
-          <label for="username">Usuario</label>
           <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
 
-          <label for="password">Contraseña</label>
           <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
 
           <input type="submit" value="Crear" name="login-button"><br>
