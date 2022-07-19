@@ -51,9 +51,7 @@
 
         <form method="post">
 
-          <?php
-          include("controlador.php");
-          ?>
+
 
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
 
