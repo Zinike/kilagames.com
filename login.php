@@ -65,8 +65,6 @@
     </div>
   </section>
 
-
-
   <footer>
     <div class="contenedor">
       <p>KilaGames - Todos los derechos reservados</p>
