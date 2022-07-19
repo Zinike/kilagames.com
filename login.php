@@ -53,7 +53,6 @@
   <section id="login">
     <div class="contenedor">
       <h2>Ingresa a tu cuenta</h2>
-      <?php include("controlador.php"); ?>
       <form class="form-login" action="index.php" method="post">
         <label for="username">Usuario</label>
         <input type="text" name="usuario" placeholder="Ingresa tu usuario"><br>
@@ -62,6 +61,7 @@
         <input type="submit" name="login-button" value="Entrar" ><br>
         <a href="registro.php">No tenes cuenta?</a>
       </form>
+      <?php include("controlador.php"); ?>
     </div>
   </section>
 
