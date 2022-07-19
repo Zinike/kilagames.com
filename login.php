@@ -54,9 +54,7 @@
     <div class="contenedor">
       <h2>Ingresa a tu cuenta</h2>
       <form class="form-login" action="" method="get">
-        <?php
-        include("controlador.php");
-        ?>
+
         <label for="username">Usuario</label>
         <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
         <label for="password">Contraseña</label>
