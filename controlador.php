@@ -26,6 +26,7 @@ if (isset($_POST["register"])) {
         ?>
         <h3 class="bad">¡COMPLETA LOS CAMPOS!</h3>
         <?php
+      }
   }
 }
 ?>
