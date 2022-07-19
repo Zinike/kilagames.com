@@ -61,7 +61,6 @@
           include("controlador.php");
           ?>
 
-
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
 
           <input type="text" placeholder="Ingresa tu apellido" name="apellido"><br>

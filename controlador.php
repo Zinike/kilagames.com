@@ -14,12 +14,12 @@ if (isset($_POST["login-button"])){
 
     if ($resultado) {
       ?>
-      <h3>¡Gracias por unirte!</h3>
+        <h3>¡Gracias por unirte!</h3>
       <?php
       }
       else {
       ?>
-      <h3>Algo salió mal</h3>
+        <h3>Algo salió mal</h3>
       <?php
   }
 }
