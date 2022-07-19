@@ -11,7 +11,7 @@
     <meta name="description" content="Los juegos que quieras, por el mejor precio: GRATIS">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <title>KilaGames - Registro</title>
+    <title>KilaGames</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -45,12 +45,18 @@
       </div>
     </header>
 
+    <section id="hero">
+      <div class="contenedor">
+        <h1>KilaGames</h1><br>
+        <h2>Tu sitio de juegos</h2>
+      </div>
+    </section>
+
     <section id="register">
       <div class="contenedor">
         <h2>Crea tu cuenta</h2>
 
         <form method="post">
-
 
 
           <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br>
