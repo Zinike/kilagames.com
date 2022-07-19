@@ -62,12 +62,12 @@
           ?>
 
           <label for="username">Usuario</label>
-          <input type="text" placeholder="Ingresa tu usuario" name="usuario"><br>
+          <input type="text" name="usuario" placeholder="Ingresa tu usuario"><br>
 
           <label for="password">Contraseña</label>
-          <input type="password" placeholder="Ingresa tu contraseña" name="contraseña"><br>
+          <input type="password" name="contraseña" placeholder="Ingresa tu contraseña"><br>
 
-          <input type="submit" value="Crear" name="register"><br>
+          <input type="submit" name="login-register" value="Crear"><br>
 
           <a href="registro.php">¿Ya tenes cuenta?</a>
         </form>
