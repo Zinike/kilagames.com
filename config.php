@@ -27,9 +27,9 @@ if (isset($_POST['login-register'])) {
 
     // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
     $consulta = "INSERT INTO `usuarios`(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña')";
-    $resultado = mysqli_query($conexion,$consulta);
+    $resultado = mysqli_query($conexion, $consulta);
 
-  
+
   }
 }
 mysqli_close($conexion);
