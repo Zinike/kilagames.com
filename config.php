@@ -11,7 +11,7 @@ if (isset($_POST['login-register'])) {
       $usuario = mysqli_real_escape_string($conn, $usuario);
 	    $contraseña = mysqli_real_escape_string($conn, $contraseña);
 
-      // VERIFICAION DE USUARIO
+      // VERIFICAION DE DUPLICACION DE USUARIO
       $contejamiento = "SELECT FROM usuarios  WHERE usuario=$usuario";
       $verificar_usuario = mysqli_query($conexion,$cotejamiento);
 
