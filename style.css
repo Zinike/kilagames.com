@@ -133,26 +133,7 @@ body {
     justify-content: center;
   }
 
-  #contenido {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: row;
-    height: auto;
-    width: 100vw;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  #contenido .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #contenido #pc {
+  #pc {
     display: flex;
     align-items: center;
     align-content: center;
@@ -163,7 +144,7 @@ body {
     margin-right: 10px;
   }
 
-  #contenido #pc .contenedor {
+  #pc .contenedor {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 15px;
     display: flex;
@@ -172,11 +153,11 @@ body {
     justify-content: center;
   }
 
-  #contenido #pc .contenedor a {
+  #pc .contenedor a {
     font-size: 2.5rem;
   }
 
-  #contenido #pc .contenedor .card {
+  #pc .contenedor .card {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -186,7 +167,7 @@ body {
     flex-direction: row;
   }
 
-  #contenido #pc .contenedor .card .tarjeta {
+  #pc .contenedor .card .tarjeta {
     position: relative;
     overflow: hidden;
     height: 480px;
@@ -200,17 +181,17 @@ body {
     justify-content: space-evenly;
   }
 
-  #contenido #pc .contenedor .card .tarjeta img {
+  #pc .contenedor .card .tarjeta img {
     width: auto;
     height: 60%;
   }
 
-  #contenido #pc .contenedor .card .tarjeta .texto {
+  #pc .contenedor .card .tarjeta .texto {
     width: auto;
     height: 40%;
   }
 
-  #contenido #pc .contenedor .card .tarjeta .texto p {
+  #pc .contenedor .card .tarjeta .texto p {
     font-size: .85rem;
     max-height: 65%;
     min-height: 60%;
@@ -220,18 +201,18 @@ body {
     overflow: hidden;
   }
 
-  #contenido #pc .contenedor .card .tarjeta .texto .link {
+  #pc .contenedor .card .tarjeta .texto .link {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
   }
 
-  #contenido #pc .contenedor .card .tarjeta .texto .link a {
+  #pc .contenedor .card .tarjeta .texto .link a {
     font-size: 1.25rem;
     border-top: 1px solid white;
   }
 
-  #contenido #peliculas {
+  #peliculas {
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -243,7 +224,7 @@ body {
     margin-right: 10px;
   }
 
-  #contenido #peliculas .contenedor {
+  #peliculas .contenedor {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 15px;
     display: flex;
@@ -253,18 +234,18 @@ body {
     justify-content: center;
   }
 
-  #contenido #peliculas .contenedor a {
+  #peliculas .contenedor a {
     font-size: 2.5rem;
   }
 
-  #contenido #peliculas .contenedor .card {
+  #peliculas .contenedor .card {
     display: flex;
     text-align: center;
     background: #111;
     flex-direction: row;
   }
 
-  #contenido #peliculas .contenedor .card .tarjeta {
+  #peliculas .contenedor .card .tarjeta {
     position: relative;
     overflow: hidden;
     height: 480px;
@@ -278,17 +259,17 @@ body {
     justify-content: space-evenly;
   }
 
-  #contenido #peliculas .contenedor .card .tarjeta img {
+  #peliculas .contenedor .card .tarjeta img {
     width: auto;
     height: 60%;
   }
 
-  #contenido #peliculas .contenedor .card .tarjeta .texto {
+  #peliculas .contenedor .card .tarjeta .texto {
     width: auto;
     height: 40%;
   }
 
-  #contenido #peliculas .contenedor .card .tarjeta .texto p {
+  #peliculas .contenedor .card .tarjeta .texto p {
     font-size: .85rem;
     max-height: 65%;
     min-height: 60%;
@@ -298,21 +279,17 @@ body {
     overflow: hidden;
   }
 
-  #contenido #peliculas .contenedor .card .tarjeta .texto .link {
+  #peliculas .contenedor .card .tarjeta .texto .link {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
   }
 
-  #contenido #peliculas .contenedor .card .tarjeta .texto .link a {
+  #peliculas .contenedor .card .tarjeta .texto .link a {
     font-size: 1.25rem;
     border-top: 1px solid white;
     display: flex;
     flex-direction: column;
-  }
-
-  #contenido .discord {
-    display: block;
   }
 
   #social {
