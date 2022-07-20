@@ -24,7 +24,24 @@ if (isset($_POST['login-register'])) {
       // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
 	    $consulta = "INSERT INTO usuarios(id, usuario, contraseña) VALUES (NULL,'$usuario_verificado','$contraseña_encriptada')";
 	    $resultado = mysqli_query($conexion,$consulta);
+
+      if ($resultado) {
+        ?>
+        <div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
+        <?php
+        
+      } else {
+        ?>
+        <div class="contenedor"><p>¡Ups ha ocurrido un error!</p></div>
+        <?php
+
+    } else {
+      ?>
+      <div class="contenedor"><p>¡Por favor complete los campos!</p></div>
+      <?php
     }
 }
 mysqli_close($conexion);
 ?>
+
+}
