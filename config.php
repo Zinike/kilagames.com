@@ -5,7 +5,7 @@ include("conexion.php");
 if (isset($_POST['login-register'])) {
     if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
 
-      //ELIMINACION DE ESPACIO CON TRIM
+      // ELIMINACION DE ESPACIO CON TRIM
 	    $usuario = trim($_POST['usuario']);
 	    $contraseña = trim($_POST['contraseña']);
 
@@ -15,13 +15,13 @@ if (isset($_POST['login-register'])) {
 
       // VERIFICAION DE DUPLICACION DE USUARIO
       $contejamiento = "SELECT FROM usuarios  WHERE usuario=$usuario";
-      $verificar_usuario = mysqli_query($conexion,$cotejamiento);
+      $usuario_verificado = mysqli_query($conexion,$cotejamiento);
 
-      //ENCRIPTACIONB DE CONTRASEÑA
-      $contraseñaencriptada = password_hash($contraseña, PASSWORD_BCRYPT);
+      // ENCRIPTACIONB DE CONTRASEÑA
+      $contraseña_encriptada = password_hash($contraseña, PASSWORD_BCRYPT);
 
       // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
-	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$verificar_usuario','$contraseñaencriptada')";
+	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_encriptada')";
 	    $resultado = mysqli_query($conexion,$consulta);
 
 	    if ($resultado) {
