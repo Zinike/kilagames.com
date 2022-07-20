@@ -48,7 +48,7 @@
     <section id="hero">
       <div class="contenedor">
         <h1>KilaGames</h1><br>
-        <h2>Tu sitio de juegos (valio verga)</h2>
+        <h2>Tu sitio de juegos</h2>
       </div>
     </section>
 
