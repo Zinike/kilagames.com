@@ -7,8 +7,8 @@ if (isset($_POST['login-register'])) {
 	    $usuario = trim($_POST['usuario']);
 	    $contraseña = trim($_POST['contraseña']);
 
-      $usuario = mysqli_real_escape_string($conn, $usuario);
-	    $contraseña = mysqli_real_escape_string($conn, $contraseña);
+      $usuario = mysqli_real_escape_string($conexion, $usuario);
+	    $contraseña = mysqli_real_escape_string($conexion, $contraseña);
 
 	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
 
