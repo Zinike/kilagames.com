@@ -55,7 +55,7 @@
     <div class="contenedor">
       <h2>Peliculas y Series</h2>
       <form class="peliculas-series card" action="index.html" method="post">
-        <?php $resultado = mysqli_query($conn, $peliculas);
+        <?php $resultado = mysqli_query($conexion, $peliculas);
           while ($row=mysqli_fetch_assoc($resultado)) {?>
         <div class="tarjeta">
           <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">

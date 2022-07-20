@@ -55,7 +55,7 @@
     <div class="contenedor">
       <h2>Juegos de PC</h2>
       <form class="pc-games card">
-        <?php $resultado = mysqli_query($conn, $pc);
+        <?php $resultado = mysqli_query($conexion, $pc);
           while ($row=mysqli_fetch_assoc($resultado)) {?>
         <div class="tarjeta">
           <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
