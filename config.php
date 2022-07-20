@@ -18,8 +18,6 @@ if (isset($_POST['login-register'])) {
     // VERIFICAION DE DUPLICACION DE USUARIO
     $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
     $usuario_verificado = mysqli_query($conexion,$cotejamiento);
-
-
     // CODIFICACION DE CONTRASEÑA
     $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
 
