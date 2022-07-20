@@ -17,6 +17,7 @@ if (isset($_POST['login-register'])) {
       $contejamiento = "SELECT FROM usuarios  WHERE usuario=$usuario";
       $verificar_usuario = mysqli_query($conexion,$cotejamiento);
 
+      $contraseña = password_hash($contraseña, password_BCRYPT);
 
       // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
 	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
