@@ -11,22 +11,40 @@ if (isset($_POST['login-register'])) {
 
 
     // ELIMINACION DE INJECCION (" OR 1=1#)
-    $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
-    $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
+    if ($usuario && $contraseña){
+      $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
+      $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
+    } else {
+      ?>
+    	<div class="contenedor"><p>¡Tu usuario/contraseña esta injected!</p></div>
+      <?php
+    }
 
 
     // VERIFICAION DE DUPLICACION DE USUARIO
-    $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
-    $usuario_verificado = mysqli_query($conexion,$cotejamiento);
+    if ($usuario_clear) {
+      $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
+      $usuario_verificado = mysqli_query($conexion,$cotejamiento);
+    } else {
+      ?>
+    	<div class="contenedor"><p>¡Tu usuario/contraseña esta repetido!</p></div>
+      <?php
+    }
+
+
     // CODIFICACION DE CONTRASEÑA
-    $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
+    if ($contraseña_clear) {
+      $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
+    }
 
 
     // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
+    if ($usuario_verificado && $contraseña_codificada){
     $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
     $resultado = mysqli_query($conexion, $consulta);
+    }
 
-
+    
     // RESPUESTAS
     if ($resultado) {
     	?>
