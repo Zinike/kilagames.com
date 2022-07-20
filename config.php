@@ -17,7 +17,7 @@ if (isset($_POST['login-register'])) {
 
 
     // VERIFICAION DE DUPLICACION DE USUARIO
-    $contejamiento = "SELECT FROM usuarios WHERE usuario='$usuario'";
+    $cotejamiento = "SELECT FROM usuarios WHERE usuario='$usuario'";
     $usuario_verificado = mysqli_query($conexion,$cotejamiento);
 
 
