@@ -22,7 +22,7 @@ if (isset($_POST['login-register'])) {
 	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
 	    $resultado = mysqli_query($conexion,$consulta);
 
-	    if ($result) {
+	    if ($resultado) {
 	    	?>
 	    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
         <?php
