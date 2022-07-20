@@ -135,7 +135,6 @@ body {
 
   #pc {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -161,6 +160,7 @@ body {
 
   #pc .contenedor .card {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     background: #111;
     flex-direction: row;
