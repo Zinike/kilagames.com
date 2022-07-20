@@ -30,7 +30,7 @@ if (isset($_POST['login-register'])) {
     $resultado = mysqli_query($conexion, $consulta);
 
 
-    //RESPUESTAS
+    // RESPUESTAS
     if ($resultado) {
     	?>
     	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
@@ -46,5 +46,7 @@ if (isset($_POST['login-register'])) {
   <?php
   }
 }
+
+// CIERRE DE LA CONEXION
 mysqli_close($conexion);
 ?>
