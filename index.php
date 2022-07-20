@@ -53,6 +53,9 @@
       </div>
     </section>
 
+    <section id="contenido">
+
+
     <section id="pc">
       <div class="contenedor">
         <h2>Juegos de PC</h2>
@@ -101,6 +104,14 @@
         </form>
         <a href="peliculas.php">Ver Más</a>
       </div>
+    </section>
+
+    <aside class="discord">
+      <div class="discord">
+        <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+    </aside>
+
     </section>
 
     <section id="social">
