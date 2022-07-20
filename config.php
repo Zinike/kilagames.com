@@ -27,7 +27,7 @@ if (isset($_POST['login-register'])) {
       $usuario_verificado = mysqli_query($conexion,$cotejamiento);
     } else {
       ?>
-    	<div class="contenedor"><p>¡Tu usuario/contraseña esta repetido!</p></div>
+    	<div class="contenedor"><p>¡Tu usuario esta repetido!</p></div>
       <?php
     }
 
@@ -44,7 +44,7 @@ if (isset($_POST['login-register'])) {
     $resultado = mysqli_query($conexion, $consulta);
     }
 
-    
+
     // RESPUESTAS
     if ($resultado) {
     	?>
