@@ -10,10 +10,10 @@ if (isset($_POST['login-register'])) {
       $usuario = mysqli_real_escape_string($conexion, $usuario);
 	    $contraseña = mysqli_real_escape_string($conexion, $contraseña);
 
-	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
+	    $consult = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
 
-	    $resultado = mysqli_query($conexion,$consulta);
-	    if ($resultado) {
+	    $result = mysqli_query($conexion,$consult);
+	    if ($result) {
 	    	?>
 	    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
         <?php
