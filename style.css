@@ -134,7 +134,7 @@ body {
   }
 
   #pc {
-    display: flex;
+    display: wrap;
     align-items: center;
     align-content: center;
     justify-content: center;
