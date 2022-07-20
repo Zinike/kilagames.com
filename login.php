@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
 
   <?php
-  include("conexion.php");
+  require("conexion.php");
   ?>
 
   <head>
@@ -58,7 +58,7 @@
         <form method="post" action="index.php"autocomplete="off">
 
           <?php
-          include("config.php");
+          require("config.php");
           ?>
 
           <label for="username">Usuario</label>

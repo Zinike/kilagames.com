@@ -1,6 +1,6 @@
 <?php
 
-include "conexion.php";
+require "conexion.php";
 
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 4 && strlen($_POST['contraseña']) >= 8) {
