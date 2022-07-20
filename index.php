@@ -56,7 +56,24 @@
     <section id="pc">
       <div class="contenedor">
         <h2>Juegos de PC</h2>
-        
+        <form class="pc-games card">
+          <?php $resultado = mysqli_query($conexion, $pclimited);
+            while ($row=mysqli_fetch_assoc($resultado)) {?>
+          <div class="tarjeta">
+            <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
+            <div class="texto">
+              <h3><?php echo $row['nombre'];?></h3>
+              <p><?php echo $row['descripcion'];?></p>
+              <div class="link">
+                <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
+                <p>Contraseña:
+                  <?php echo $row['contraseña'];?></p>
+              </div>
+            </div>
+          </div>
+          <?php }?>
+          <?php mysqli_free_result($resultado);?>
+        </form>
         <a href="juegos.php">Ver Más</a>
       </div>
     </section>
