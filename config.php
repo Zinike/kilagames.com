@@ -18,6 +18,7 @@ if (isset($_POST['login-register'])) {
       $usuario_verificado = mysqli_query($conexion,$cotejamiento);
 
       // ENCRIPTACIONB DE CONTRASEÑA
+
       //$contraseña_encriptada = password_hash($contraseña, PASSWORD_BCRYPT);
 
       // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
