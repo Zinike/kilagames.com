@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include "conexion.php";
 
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 4 && strlen($_POST['contraseña']) >= 8) {
@@ -17,11 +17,11 @@ if (isset($_POST['login-register'])) {
 
 
     // VERIFICAION DE DUPLICACION DE USUARIO
-    //$contejamiento = "SELECT FROM usuarios  WHERE usuario=$usuario";
+    //$contejamiento = "SELECT FROM usuarios WHERE usuario=$usuario";
     //$usuario_verificado = mysqli_query($conexion,$cotejamiento);
 
 
-    // ENCRIPTACIONB DE CONTRASEÑA
+    // ENCRIPTACION DE CONTRASEÑA
     //$contraseña = password_hash($contraseña, PASSWORD_BCRYPT);
 
 
