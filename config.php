@@ -42,8 +42,6 @@ if (isset($_POST['login-register'])) {
     if ($usuario_verificado && $contraseña_codificada){
     $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
     $resultado = mysqli_query($conexion, $consulta);
-    }
-
 
     // RESPUESTAS
     if ($resultado) {
@@ -55,6 +53,7 @@ if (isset($_POST['login-register'])) {
     	<div class="contenedor"><p>¡Ups ha ocurrido un error!</p></div>
       <?php
     }
+  }
   } else {
   ?>
   <div class="contenedor"><p>¡Por favor complete los campos!</p></div>
