@@ -17,8 +17,8 @@ if (isset($_POST['login-register'])) {
 
 
     // VERIFICAION DE DUPLICACION DE USUARIO
-    /*$contejamiento = "SELECT FROM usuarios WHERE usuario=$usuario";
-    $usuario_verificado = mysqli_query($conexion,$cotejamiento);*/
+    $contejamiento = "SELECT FROM usuarios WHERE usuario=$usuario";
+    $usuario_verificado = mysqli_query($conexion,$cotejamiento);
 
 
     // ENCRIPTACION DE CONTRASEÑA
@@ -26,9 +26,11 @@ if (isset($_POST['login-register'])) {
 
 
     // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
-    $consulta = "INSERT INTO `usuarios` (usuario, contraseña) VALUES ('$usuario_verificado','$contraseña')";
+    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña')";
     $resultado = mysqli_query($conexion, $consulta);
 
+
+    //RESPUESTAS
     if ($resultado) {
     	?>
     	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
