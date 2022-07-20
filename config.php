@@ -5,24 +5,23 @@ require "conexion.php";
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 4 && strlen($_POST['contraseña']) >= 8) {
 
-
     // ELIMINACION DE ESPACIO CON TRIM
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
 
 
     // ELIMINACION DE INJECCION (" OR 1=1#)
-    $usuario = mysqli_real_escape_string($conexion, $usuario);
-    $contraseña = mysqli_real_escape_string($conexion, $contraseña);
+    $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
+    $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
 
 
     // VERIFICAION DE DUPLICACION DE USUARIO
-    $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario'";
+    $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
     $usuario_verificado = mysqli_query($conexion,$cotejamiento);
 
 
-    // ENCRIPTACION DE CONTRASEÑA
-    $contraseña_codificada = password_hash($contraseña, PASSWORD_BCRYPT);
+    // CODIFICACION DE CONTRASEÑA
+    $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
 
 
     // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
