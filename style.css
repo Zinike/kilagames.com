@@ -133,6 +133,10 @@ body {
     justify-content: center;
   }
 
+  #contenido {
+    display: flex;
+  }
+
   #contenido #pc {
     display: flex;
     align-items: center;
