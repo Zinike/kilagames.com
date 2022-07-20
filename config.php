@@ -12,8 +12,8 @@ if (isset($_POST['login-register'])) {
 
 
     // ELIMINACION DE INJECCION (" OR 1=1#)
-    $usuario = mysqli_real_escape_string($conn, $usuario);
-    $contraseña = mysqli_real_escape_string($conn, $contraseña);
+    $usuario = mysqli_real_escape_string($conexion, $usuario);
+    $contraseña = mysqli_real_escape_string($conexion, $contraseña);
 
 
     // VERIFICAION DE DUPLICACION DE USUARIO
@@ -22,11 +22,11 @@ if (isset($_POST['login-register'])) {
 
 
     // ENCRIPTACION DE CONTRASEÑA
-    $contraseña = password_hash($contraseña, PASSWORD_BCRYPT);
+    $contraseña_codificada = password_hash($contraseña, PASSWORD_BCRYPT);
 
 
     // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
-    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña')";
+    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
     $resultado = mysqli_query($conexion, $consulta);
 
 
