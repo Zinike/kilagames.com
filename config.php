@@ -29,18 +29,16 @@ if (isset($_POST['login-register'])) {
 	    	?>
 	    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
         <?php
-	    }
-      else {
+	    } else {
 	    	?>
 	    	<div class="contenedor"><p>¡Ups ha ocurrido un error!</p></div>
         <?php
-	    }
-    }
-    else {
+	    } else {
 	    ?>
 	    <div class="contenedor"><p>¡Por favor complete los campos!</p></div>
       <?php
     }
+  }
 }
 mysqli_close($conexion);
 ?>
