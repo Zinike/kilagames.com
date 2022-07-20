@@ -18,10 +18,10 @@ if (isset($_POST['login-register'])) {
       $usuario_verificado = mysqli_query($conexion,$cotejamiento);
 
       // ENCRIPTACIONB DE CONTRASEÑA
-      $contraseña_encriptada = password_hash($contraseña, PASSWORD_BCRYPT);
+      //$contraseña_encriptada = password_hash($contraseña, PASSWORD_BCRYPT);
 
       // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
-	    $consulta = "INSERT INTO usuarios(id, usuario, contraseña) VALUES (NULL,'$usuario_verificado','$contraseña_encriptada')";
+	    $consulta = "INSERT INTO usuarios(id, usuario, contraseña) VALUES (NULL,'$usuario_verificado','$contraseña')";
 	    $resultado = mysqli_query($conexion,$consulta);
 
 	    if ($resultado) {
