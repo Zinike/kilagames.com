@@ -3,7 +3,7 @@
 include("conexion.php");
 
 if (isset($_POST['login-register'])) {
-    if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
+    if (!empty()$_POST['usuario']) && strlen($_POST['contraseña']) >= 8) {
 
       // ELIMINACION DE ESPACIO CON TRIM
 	    $usuario = trim($_POST['usuario']);
