@@ -4,10 +4,10 @@ if(!$conexion){
   echo "Connection error: " . mysqli_connect_error();
 }
 
+$pc = "SELECT * FROM pc";
+$pclimited = "SELECT * FROM pc LIMIT 5";
+
 $peliculas= "SELECT * FROM peliculas";
 $peliculaslimited= "SELECT * FROM peliculas LIMIT 5";
-
-$pclimited = "SELECT * FROM pc LIMIT 5";
-$pc = "SELECT * FROM pc";
 
 ?>

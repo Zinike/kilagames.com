@@ -7,6 +7,7 @@ if (isset($_POST['login-register'])) {
 	    $usuario = trim($_POST['usuario']);
 	    $contraseña = trim($_POST['contraseña']);
 
+<<<<<<< HEAD
       // ELIMINACION DE INJECCION
       $usuario = mysqli_real_escape_string($conn, $usuario);
 	    $contraseña = mysqli_real_escape_string($conn, $contraseña);
@@ -21,6 +22,15 @@ if (isset($_POST['login-register'])) {
 	    $resultado = mysqli_query($conexion,$consulta);
 
 	    if ($resultado) {
+=======
+      $usuario = mysqli_real_escape_string($conexion, $usuario);
+	    $contraseña = mysqli_real_escape_string($conexion, $contraseña);
+
+	    $consult = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
+
+	    $result = mysqli_query($conexion,$consult);
+	    if ($result) {
+>>>>>>> 844a4b912460190ef407f8e668b77225cdbf403c
 	    	?>
 	    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
         <?php
