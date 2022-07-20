@@ -135,6 +135,7 @@ body {
 
   #contenido {
     display: flex;
+    flex-direction: column;
   }
 
   #contenido #pc {
