@@ -54,62 +54,63 @@
   </section>
 
   <section id="contenido">
-    <section id="pc">
-      <div class="contenedor">
-        <h2>Juegos de PC</h2>
-        <form class="pc-games card">
-          <?php $resultado = mysqli_query($conexion, $pclimited);
+    <div class="contenedor">
+      <section id="pc">
+        <div class="contenedor">
+          <h2>Juegos de PC</h2>
+          <form class="pc-games card">
+            <?php $resultado = mysqli_query($conexion, $pclimited);
             while ($row=mysqli_fetch_assoc($resultado)) {?>
-          <div class="tarjeta">
-            <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
-            <div class="texto">
-              <h3><?php echo $row['nombre'];?></h3>
-              <p><?php echo $row['descripcion'];?></p>
-              <div class="link">
-                <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
-                <p>Contraseña:
-                  <?php echo $row['contraseña'];?></p>
+            <div class="tarjeta">
+              <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
+              <div class="texto">
+                <h3><?php echo $row['nombre'];?></h3>
+                <p><?php echo $row['descripcion'];?></p>
+                <div class="link">
+                  <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
+                  <p>Contraseña:
+                    <?php echo $row['contraseña'];?></p>
+                </div>
               </div>
             </div>
-          </div>
-          <?php }?>
-          <?php mysqli_free_result($resultado);?>
-        </form>
-        <a href="juegos.php">Ver Más</a>
-      </div>
-    </section>
+            <?php }?>
+            <?php mysqli_free_result($resultado);?>
+          </form>
+          <a href="juegos.php">Ver Más</a>
+        </div>
+      </section>
 
-    <section id="peliculas">
-      <div class="contenedor">
-        <h2>Peliculas y Series</h2>
-        <form class="peliculas-series card" action="index.html" method="post">
-          <?php $resultado = mysqli_query($conexion, $peliculaslimited);
+      <section id="peliculas">
+        <div class="contenedor">
+          <h2>Peliculas y Series</h2>
+          <form class="peliculas-series card" action="index.html" method="post">
+            <?php $resultado = mysqli_query($conexion, $peliculaslimited);
             while ($row=mysqli_fetch_assoc($resultado)) {?>
-          <div class="tarjeta">
-            <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
-            <div class="texto">
-              <h3><?php echo $row['nombre'];?></h3>
-              <p><?php echo $row['descripcion'];?></p>
-              <div class="link">
-                <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
-                <p>Contraseña:
-                  <?php echo $row['contraseña'];?></p>
+            <div class="tarjeta">
+              <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
+              <div class="texto">
+                <h3><?php echo $row['nombre'];?></h3>
+                <p><?php echo $row['descripcion'];?></p>
+                <div class="link">
+                  <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
+                  <p>Contraseña:
+                    <?php echo $row['contraseña'];?></p>
+                </div>
               </div>
             </div>
-          </div>
-          <?php }?>
-          <?php mysqli_free_result($resultado);?>
-        </form>
-        <a href="peliculas.php">Ver Más</a>
-      </div>
-    </section>
+            <?php }?>
+            <?php mysqli_free_result($resultado);?>
+          </form>
+          <a href="peliculas.php">Ver Más</a>
+        </div>
+      </section>
+    </div>
 
     <aside class="discord-aside">
       <div class="discord">
         <iframe src="https://discord.com/widget?id=980502183546089483&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
       </div>
     </aside>
-
   </section>
 
   <section id="social">

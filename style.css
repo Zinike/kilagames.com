@@ -135,6 +135,11 @@ body {
 
   #contenido {
     display: flex;
+    flex-direction: row;
+  }
+
+  #contenido .contenedor {
+    display: flex;
     flex-direction: column;
   }
 
