@@ -55,7 +55,7 @@
     <section id="login-register">
       <div class="contenedor">
         <h2>Ingresa a tu cuenta</h2>
-        <form method="post" autocomplete="off">
+        <form method="post" action="login.php"autocomplete="off">
 
           <?php
           include("config.php");
