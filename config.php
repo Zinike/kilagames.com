@@ -6,8 +6,8 @@ if (isset($_POST['login-register'])) {
     if (!empty($_POST['usuario']) && strlen($_POST['contraseña']) >= 8) {
 
       // ELIMINACION DE ESPACIO CON TRIM
-	    $usuario = trim($_POST['usuario']);
-	    $contraseña = trim($_POST['contraseña']);
+	    //$usuario = trim($_POST['usuario']);
+	    //$contraseña = trim($_POST['contraseña']);
 
       // ELIMINACION DE INJECCION (" OR 1=1#)
       //$usuario = mysqli_real_escape_string($conn, $usuario);
@@ -37,9 +37,9 @@ if (isset($_POST['login-register'])) {
 	    }
     }
     else {
-	    	?>
-	    	<div class="contenedor"><p>¡Por favor complete los campos!</p></div>
-        <?php
+	    ?>
+	    <div class="contenedor"><p>¡Por favor complete los campos!</p></div>
+      <?php
     }
 }
 mysqli_close($conexion);
