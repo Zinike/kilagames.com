@@ -29,19 +29,7 @@ if (isset($_POST['login-register'])) {
     $consulta = "INSERT INTO `usuarios`(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña')";
     $resultado = mysqli_query($conexion,$consulta);
 
-    if ($resultado) {
-    	?>
-    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
-      <?php
-    } else {
-    	?>
-    	<div class="contenedor"><p>¡Ups ha ocurrido un error!</p></div>
-      <?php
-    }
-  } else {
-  ?>
-  <div class="contenedor"><p>¡Por favor complete los campos!</p></div>
-  <?php
+  
   }
 }
 mysqli_close($conexion);
