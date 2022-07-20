@@ -56,7 +56,7 @@
     <section id="pc">
       <div class="contenedor">
         <h2>Juegos de PC</h2>
-        <form class="pc-games card">
+        <form class="pc-games card" method="post">
           <?php $resultado = mysqli_query($conexion, $pclimited);
             while ($row=mysqli_fetch_assoc($resultado)) {?>
           <div class="tarjeta">
