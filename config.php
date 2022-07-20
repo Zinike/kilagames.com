@@ -10,8 +10,8 @@ if (isset($_POST['login-register'])) {
 	    $contraseña = trim($_POST['contraseña']);
 
       // ELIMINACION DE INJECCION (" OR 1=1#)
-      $usuario = mysqli_real_escape_string($conn, $usuario);
-	    $contraseña = mysqli_real_escape_string($conn, $contraseña);
+      //$usuario = mysqli_real_escape_string($conn, $usuario);
+	    //$contraseña = mysqli_real_escape_string($conn, $contraseña);
 
       // VERIFICAION DE DUPLICACION DE USUARIO
       //$contejamiento = "SELECT FROM usuarios  WHERE usuario=$usuario";
