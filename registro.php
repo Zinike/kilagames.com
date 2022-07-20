@@ -69,7 +69,7 @@
 
           <input type="submit" name="login-register" value="Crear"><br>
 
-          <a href="registro.php">¿Ya tenes cuenta?</a>
+          <a href="login.php">¿Ya tenes cuenta?</a>
         </form>
       </div>
     </section>
