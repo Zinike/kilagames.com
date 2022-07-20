@@ -297,7 +297,9 @@ body {
     flex-direction: column;
   }
 
-  #contenido .discord {}
+  #contenido .discord {
+    display: block;
+  }
 
   #social {
     display: flex;
