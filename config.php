@@ -17,17 +17,8 @@ if (isset($_POST['login-register'])) {
 
       // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
 	    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
-
 	    $resultado = mysqli_query($conexion,$consulta);
 
-	    if ($resultado) {
-
-      $usuario = mysqli_real_escape_string($conexion, $usuario);
-	    $contraseña = mysqli_real_escape_string($conexion, $contraseña);
-
-	    $consult = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario','$contraseña')";
-
-	    $result = mysqli_query($conexion,$consult);
 	    if ($result) {
 	    	?>
 	    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
