@@ -3,7 +3,7 @@
 include("conexion.php");
 
 if (isset($_POST['login-register'])) {
-    if (!empty()$_POST['usuario']) && strlen($_POST['contraseña']) >= 8) {
+    if (!empty($_POST['usuario']) && strlen($_POST['contraseña']) >= 8) {
 
       // ELIMINACION DE ESPACIO CON TRIM
 	    $usuario = trim($_POST['usuario']);
@@ -25,23 +25,22 @@ if (isset($_POST['login-register'])) {
 	    $consulta = "INSERT INTO usuarios(id, usuario, contraseña) VALUES (NULL,'$usuario_verificado','$contraseña_encriptada')";
 	    $resultado = mysqli_query($conexion,$consulta);
 
-      if ($resultado) {
-        ?>
-        <div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
+	    if ($resultado) {
+	    	?>
+	    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
         <?php
-        
-      } else {
-        ?>
-        <div class="contenedor"><p>¡Ups ha ocurrido un error!</p></div>
+	    }
+      else {
+	    	?>
+	    	<div class="contenedor"><p>¡Ups ha ocurrido un error!</p></div>
         <?php
-
-    } else {
-      ?>
-      <div class="contenedor"><p>¡Por favor complete los campos!</p></div>
-      <?php
+	    }
+    }
+    else {
+	    	?>
+	    	<div class="contenedor"><p>¡Por favor complete los campos!</p></div>
+        <?php
     }
 }
 mysqli_close($conexion);
 ?>
-
-}
