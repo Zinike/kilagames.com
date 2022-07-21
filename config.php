@@ -28,8 +28,6 @@ if (isset($_POST['login-register'])) {
         echo "PRUEBA";
         if ($resultado){
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
-        } else {
-          echo "NO REGISTRADO";
         }
     }
   }
