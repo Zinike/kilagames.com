@@ -21,7 +21,7 @@ if (isset($_POST['login-register'])) {
         echo "prueba";
       }
       elseif ($resultado) {
-          echo "BIENVENIDO '$usuariov'";
+          echo "BIENVENIDO '$usuariov' TE HAS REGISTRADO CORRECTAMENTE";
       }
       else {
         echo "NO SE REGISTRO CORRECTAMENTE";
