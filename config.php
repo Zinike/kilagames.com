@@ -28,6 +28,8 @@ if (isset($_POST['login-register'])) {
           echo "Ups hubo un problema al registrte";
         }
     }
+  } else {
+    echo "Usuario y/o contraseña Vacíos"
   }
 }
 // CIERRE DE LA CONEXION
