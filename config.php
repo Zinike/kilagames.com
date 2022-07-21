@@ -7,7 +7,6 @@ session_start();
 if (isset($_POST['register'])) {
 
     $usuario = $_POST['usuario'];
-    $email = $_POST['email'];
     $contraseña = $_POST['contraseña'];
     $contraseña_hash = contraseña_hash($contraseña, contraseña_BCRYPT);
 
@@ -16,7 +15,7 @@ if (isset($_POST['register'])) {
     $query->execute();
 
     if ($query->rowCount() > 0) {
-        echo '<p class="error">The email address is already registered!</p>';
+        echo 'The usuario is already registered!';
     }
 
     if ($query->rowCount() == 0) {
