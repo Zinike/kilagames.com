@@ -19,16 +19,13 @@ if (isset($_POST['login-register'])) {
         echo "prueba";
       } elseif ($resultado) {
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
-        } else {
-          echo "NO SE REGISTRO CORRECTAMENTE";
-        }
-    } else {
-      echo "NO ENTRARON BIEN LOS DATOS";
-    }
+      } else {
+        echo "NO SE REGISTRO CORRECTAMENTE";
+      }
   } else {
     echo "COMPLETA LOS DATOS";
   }
-
+}
 
 mysqli_close($conexion);
 ?>
