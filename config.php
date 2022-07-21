@@ -1,5 +1,6 @@
 <?php
 require("conexion.php");
+
 if (isset($_POST['register'])) {
   if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
 
