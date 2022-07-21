@@ -18,23 +18,21 @@ if (isset($_POST['login-register'])) {
       }elseif ($usuario_clear && $contraseña_clear) {
         $usuariov = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuario_clear'");
         $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
-      } elseif ($usuariov && $contraseña_codificada) {
+      } elseif ($usuariov AND $contraseña_codificada) {
         $ingresodb = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuariov','$contraseña_codificada')";
         $resultado = mysqli_query($conexion, $ingresodb);
         echo "prueba";
-        if ($resultado){
+        if ($resultado) {
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
         } else {
           echo "NO SE REGISTRO CORRECTAMENTE";
         }
     } else {
-      echo "Algo esta bien";
+      echo "NO ENTRARON BIEN LOS DATOS";
     }
   } else {
     echo "COMPLETA LOS DATOS";
   }
-} else {
-  echo "apreta el boton gil";
 }
 
 mysqli_close($conexion);
