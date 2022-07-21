@@ -12,7 +12,6 @@ if (isset($_POST['register'])) {
     $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
 
     $peticion = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
-    echo "Lo Tenemos???";
     $ingreso = mysqli_query($conexion, $peticion);
     echo "Lo Tenemos!!!";
 
@@ -25,6 +24,6 @@ if (isset($_POST['register'])) {
     echo "COMPLETA LOS DATOS";
   }
 }
-
+mysqli_free_result($ingreso);
 mysqli_close($conexion);
 ?>
