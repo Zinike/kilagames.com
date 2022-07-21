@@ -10,7 +10,6 @@ if (isset($_POST['register'])) {
     $contraseñaregistro = mysqli_real_escape_string($conexion, trim($_POST['contraseña']));
     $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
     $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
-    echo "Vamos! / ";
 
     $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
     echo "Lo Tenemos???";
@@ -22,6 +21,8 @@ if (isset($_POST['register'])) {
     } else {
       echo "NO SE REGISTRO CORRECTAMENTE";
     }
+  } else {
+    echo "COMPLETA LOS DATOS";
   }
 }
 
