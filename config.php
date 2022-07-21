@@ -12,11 +12,7 @@ if (isset($_POST['register'])) {
     $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
     $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
 
-    $peticion = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
-    echo "Va queriendo";
-
-    $ingreso = mysqli_query($conexion,$peticion);
-
+    $ingreso = mysqli_query($conexion,"INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)");
 
     if ($ingreso) {
       echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
