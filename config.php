@@ -34,6 +34,8 @@ if (isset($_POST['login-register'])) {
 } else {
   echo "apreta el boton gil";
 }
+echo "Nada funciono";
+
 // CIERRE DE LA CONEXION
 mysqli_close($conexion);
 ?>
