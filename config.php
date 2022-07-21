@@ -1,9 +1,9 @@
 <?php
 require "conexion.php";
 
+session_start();
 
-
-if (isset($_POST['login-register'])) {
+if (isset($_POST['register'])) {
   if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
 
       $usuarioregistro = mysqli_real_escape_string($conexion, trim($_POST['usuario']));
