@@ -22,9 +22,9 @@ if (isset($_POST['login-register'])) {
         } if ($contraseña_clear) {
             $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
             echo "contraseña encriptada";
-        } if ($usuario_verificado && $contraseña_codificada){
-            $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
-            $resultado = mysqli_query($conexion, $consulta);
+            } if ($usuario_verificado && $contraseña_codificada){
+                $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
+                $resultado = mysqli_query($conexion, $consulta);
 
     // RESPUESTAS
     if ($resultado) {
