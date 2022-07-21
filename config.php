@@ -11,7 +11,7 @@ if (isset($_POST['login-register'])) {
     echo "USUARIO Y CONTRASEÑA TOMADO <br>";
 
     // ELIMINACION DE INJECCION (" OR 1=1#)
-    if ($usuario && $contraseña){
+    if ($usuario && $contraseña) {
         $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
         $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
         echo "USUARIO Y CONTRASEÑA LIMPIOS <br>";
@@ -22,7 +22,7 @@ if (isset($_POST['login-register'])) {
         $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
         echo "USUARIO Y CONTRASEÑA LISTOS <br>";
 
-    } if ($usuariov && $contraseña_codificada){
+    } if ($usuariov && $contraseña_codificada) {
         $ingreso_db = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuariov','$contraseña_codificada')";
         $resultado = mysqli_query($conexion, $ingreso_db);
         echo "PRUEBA";
