@@ -25,6 +25,8 @@ if (isset($_POST['login-register'])) {
         if ($resultado){
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
         }
+    }else {
+      echo "usuario repetido";
     }
   }
 }
