@@ -24,8 +24,8 @@ if (isset($_POST['login-register'])) {
         if ($resultado){
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
         }
-    }
-  }
+    } echo "algo";
+  } echo "algo mas";
 }
 // CIERRE DE LA CONEXION
 mysqli_close($conexion);
