@@ -1,6 +1,8 @@
 <?php
 require "conexion.php";
 
+session_start();
+
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
 
@@ -13,13 +15,14 @@ if (isset($_POST['login-register'])) {
         $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
         $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
         echo "Vamos! / ";
-
+      }
       if ($usuario && $contraseña) {
         $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
         echo "Lo Tenemos???";
         $resultado = $ingreso->execute();
         echo "Lo Tenemos!!!";
-        if ($resultado) {
+
+      if ($resultado) {
           echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
       } else {
         echo "NO SE REGISTRO CORRECTAMENTE";
@@ -27,8 +30,6 @@ if (isset($_POST['login-register'])) {
     } else {
       echo "COMPLETA LOS DATOS";
     }
-  }
-}
 }
 mysqli_close($conexion);
 ?>
