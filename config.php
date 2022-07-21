@@ -23,7 +23,7 @@ if (isset($_POST['login-register'])) {
         if ($resultado){
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
         } else {
-          echo "ya no se";
+          echo "Algo malo paso";
         }
     } else {
       echo "Algo no funciono";
