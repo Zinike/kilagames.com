@@ -29,7 +29,6 @@ if (isset($_POST['login-register'])) {
         }
     }
   }
-}
 // CIERRE DE LA CONEXION
 mysqli_close($conexion);
 ?>
