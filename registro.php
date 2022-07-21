@@ -67,7 +67,7 @@
           <label for="password">Contraseña</label>
           <input type="password" name="contraseña" placeholder="Ingresa tu contraseña"><br>
 
-          <input type="submit" name="login-register" value="Crear"><br>
+          <input type="submit" name="register" value="Crear"><br>
 
           <a href="login.php">¿Ya tenes cuenta?</a>
         </form>

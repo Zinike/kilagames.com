@@ -17,7 +17,7 @@ if (isset($_POST['login-register'])) {
       if ($usuario && $contraseña) {
         $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
         echo "Lo Tenemos???";
-        $resultado = mysqli_query($conexion, $ingreso);
+        $resultado = $ingreso->execute();
         echo "Lo Tenemos!!!";
       }
       if ($resultado) {
