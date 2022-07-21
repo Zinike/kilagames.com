@@ -4,16 +4,12 @@ require "conexion.php";
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
 
-    $usuario = trim($_POST['usuario']);
-    $contraseña = trim($_POST['contraseña']);
+      $usuario = mysqli_real_escape_string($conexion, trim($_POST['usuario']));
+      $contraseña = mysqli_real_escape_string($conexion, trim($_POST['contraseña']));
 
-    if ($usuario && $contraseña) {
-        $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
-        $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
-      }
-      elseif ($usuario_clear && $contraseña_clear) {
-        $usuariov = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuario_clear'");
-        $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
+      if ($usuario && $contraseña) {
+        $usuariov = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuario'");
+        $contraseña_codificada = password_hash($contraseña, PASSWORD_BCRYPT);
       }
       elseif ($usuariov AND $contraseña_codificada) {
         $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuariov','$contraseña_codificada')";
