@@ -58,7 +58,7 @@
         <form method="post" autocomplete="off">
 
           <?php
-          include "config.php";
+          require("config.php");
           ?>
 
           <label for="username">Usuario</label>
@@ -67,7 +67,7 @@
           <label for="password">Contraseña</label>
           <input type="password" name="contraseña" placeholder="Ingresa tu contraseña"><br>
 
-          <input type="submit" name="register" value="Crear"><br>
+          <input type="submit" name="registrar" value="Crear"><br>
 
           <a href="login.php">¿Ya tenes cuenta?</a>
         </form>
