@@ -21,7 +21,7 @@ if (isset($_POST['login-register'])) {
         echo "prueba";
       }
       elseif ($resultado) {
-          echo "USUARIO Y CONTRASEÑA REGISTRADOS";
+          echo "BIENVENIDO '$usuariov'";
       }
       else {
         echo "NO SE REGISTRO CORRECTAMENTE";
@@ -30,7 +30,7 @@ if (isset($_POST['login-register'])) {
   else {
     echo "COMPLETA LOS DATOS";
   }
-} echo "HOLA";
+}
 
 mysqli_close($conexion);
 ?>
