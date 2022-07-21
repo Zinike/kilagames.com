@@ -19,7 +19,7 @@ if (isset($_POST['login-register'])) {
         $usuario = mysqli_query($conexion, $cotejamiento);
         $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
 
-    } if ($usuario_verificado && $contraseña_codificada){
+    } elseif ($usuario_verificado && $contraseña_codificada){
         $ingreso_db = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario','$contraseña_codificada')";
         $resultado = mysqli_query($conexion, $ingreso_db);
         if ($resultado){
@@ -27,8 +27,6 @@ if (isset($_POST['login-register'])) {
         } else {
           echo "Ups hubo un problema al registrte";
         }
-    }else {
-      echo "usuario repetido";
     }
   }
 }
