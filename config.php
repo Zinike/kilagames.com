@@ -1,10 +1,5 @@
 <?php
-
 require "conexion.php";
-if(!$conexion){
-  echo "Connection error: " . mysqli_connect_error();
-}
-
 
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
@@ -22,9 +17,11 @@ if (isset($_POST['login-register'])) {
         $ingresodb = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuariov','$contraseña_codificada')";
         $resultado = mysqli_query($conexion, $ingresodb);
         echo "prueba";
-        if ($resultado) {
+      } elseif ($resultado) {
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
-        } 
+        } else {
+          echo "NO SE REGISTRO CORRECTAMENTE";
+        }
     } else {
       echo "NO ENTRARON BIEN LOS DATOS";
     }
