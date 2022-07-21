@@ -14,13 +14,13 @@ if (isset($_POST['login-register'])) {
     if ($usuario && $contraseña){
         $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
         $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
-        echo "";
+        echo "USUARIO Y CONTRASEÑA LIMPIOS <br>";
 
     } if ($usuario_clear && $contraseña_clear) {
         $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
         $usuario = mysqli_query($conexion, $cotejamiento);
         $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
-        echo "";
+        echo "USUARIO Y CONTRASEÑA LISTOS <br>";
 
     } if ($usuario_verificado && $contraseña_codificada){
         $ingreso_db = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario','$contraseña_codificada')";
