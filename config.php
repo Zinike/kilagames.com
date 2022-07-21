@@ -12,16 +12,19 @@ if (isset($_POST['login-register'])) {
 
     // ELIMINACION DE INJECCION (" OR 1=1#)
     if ($usuario && $contraseña){
-      $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
-      $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
+        $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
+        $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
+        echo "usuario y contraseña limpios";
     } elseif ($usuario_clear) {
-      $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
-      $usuario_verificado = mysqli_query($conexion,$cotejamiento);
+        $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
+        $usuario_verificado = mysqli_query($conexion,$cotejamiento);
+        echo "usuario sin repetir";
     } elseif ($contraseña_clear) {
-      $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
+        $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
+        echo "contraseña encriptada";
     } elseif ($usuario_verificado && $contraseña_codificada){
-    $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
-    $resultado = mysqli_query($conexion, $consulta);
+        $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
+        $resultado = mysqli_query($conexion, $consulta);
 
     // RESPUESTAS
     if ($resultado) {
