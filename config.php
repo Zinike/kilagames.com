@@ -14,47 +14,27 @@ if (isset($_POST['login-register'])) {
     if ($usuario && $contraseña){
       $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
       $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
-    } else {
-      ?>
-    	<div class="contenedor"><p>¡Tu usuario/contraseña esta injected!</p></div>
-      <?php
-    }
-
-
-    // VERIFICAION DE DUPLICACION DE USUARIO
-    if ($usuario_clear) {
+    } elseif ($usuario_clear) {
       $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
       $usuario_verificado = mysqli_query($conexion,$cotejamiento);
-    } else {
-      ?>
-    	<div class="contenedor"><p>¡Tu usuario esta repetido!</p></div>
-      <?php
-    }
-
-
-    // CODIFICACION DE CONTRASEÑA
-    if ($contraseña_clear) {
+    } elseif ($contraseña_clear) {
       $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
-    }
-
-
-    // INGRESO DE USUARIO Y CONTRASEÑA A LA BD
-    if ($usuario_verificado && $contraseña_codificada){
+    } elseif ($usuario_verificado && $contraseña_codificada){
     $consulta = "INSERT INTO usuarios(usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
     $resultado = mysqli_query($conexion, $consulta);
 
     // RESPUESTAS
     if ($resultado) {
-    	?>
-    	<div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
-      <?php
-    } else {
-    	?>
-    	<div class="contenedor"><p>¡Ups ha ocurrido un error!</p></div>
-      <?php
+    	    ?>
+    	    <div class="contenedor"><p>¡Te has registrado correctamente!</p></div>
+          <?php
+      } else {
+    	   ?>
+    	   <div class="contenedor"><p>¡Ups ha ocurrido un error!</p></div>
+         <?php
+      }
     }
-  }
-  } else {
+    } else {
   ?>
   <div class="contenedor"><p>¡Por favor complete los campos!</p></div>
   <?php
