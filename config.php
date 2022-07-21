@@ -15,7 +15,7 @@ if (isset($_POST['login-register'])) {
         $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
         $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
         echo "Vamos! / ";
-      }
+      }else
       if ($usuario && $contraseña) {
         $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
         echo "Lo Tenemos???";
@@ -32,5 +32,6 @@ if (isset($_POST['login-register'])) {
     echo "COMPLETA LOS DATOS";
   }
 }
+
 mysqli_close($conexion);
 ?>
