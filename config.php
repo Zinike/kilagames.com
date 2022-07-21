@@ -21,14 +21,14 @@ if (isset($_POST['login-register'])) {
       } else {
         echo "usuario repetido";
       }
-    } if ($usuario_verificado && $contraseña_codificada){
+      if ($usuario_verificado && $contraseña_codificada){
         $ingreso_db = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario_verificado','$contraseña_codificada')";
         $resultado = mysqli_query($conexion, $ingreso_db);
         if ($resultado){
           echo "BIENVENIDO '$usuario'";
         }
     }
-  }
+}
 // CIERRE DE LA CONEXION
 mysqli_close($conexion);
 ?>
