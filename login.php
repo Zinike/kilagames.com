@@ -57,10 +57,6 @@
         <h2>Ingresa a tu cuenta</h2>
         <form method="post" action="index.php"autocomplete="off">
 
-          <?php
-          require("config.php");
-          ?>
-
           <label for="username">Usuario</label>
           <input type="text" name="usuario" placeholder="Ingresa tu usuario"><br>
 
