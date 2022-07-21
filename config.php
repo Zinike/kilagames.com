@@ -19,6 +19,7 @@ if (isset($_POST['login-register'])) {
       } elseif ($usuariov && $contraseña_codificada) {
         $ingresodb = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuariov','$contraseña_codificada')";
         $resultado = mysqli_query($conexion, $ingresodb);
+        echo "prueba";
         if ($resultado){
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
         } else {
