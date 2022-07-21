@@ -17,12 +17,13 @@ if (isset($_POST['login-register'])) {
         echo "prueba";
       if ($resultado) {
           echo "BIENVENIDO '$usuario' TE HAS REGISTRADO CORRECTAMENTE";
+      } else {
+        echo "NO SE QUE PASO";
       }
-      else {
-        echo "NO SE REGISTRO CORRECTAMENTE";
-      }
+    } else {
+      echo "NO SE REGISTRO CORRECTAMENTE";
     }
-  }else {
+  } else {
     echo "COMPLETA LOS DATOS";
   }
 }
