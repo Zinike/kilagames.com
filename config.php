@@ -33,6 +33,5 @@ if (isset($_POST['register'])) {
     }
 }
 
-?>
 mysqli_close($conexion);
 ?>
