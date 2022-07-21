@@ -10,23 +10,20 @@ if (isset($_POST['login-register'])) {
       if ($usuarioregistro && $contraseñaregistro) {
         $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
         $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
-      }
-      elseif ($usuario && $contraseña) {
+      } elseif ($usuario && $contraseña) {
         $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario','$contraseña')";
         $resultado = mysqli_query($conexion, $ingreso);
         echo "prueba";
-      if ($resultado) {
+      } elseif ($resultado) {
           echo "BIENVENIDO '$usuario' TE HAS REGISTRADO CORRECTAMENTE";
       } else {
-        echo "NO SE QUE PASO";
+        echo "NO SE REGISTRO CORRECTAMENTE";
       }
     } else {
-      echo "NO SE REGISTRO CORRECTAMENTE";
+      echo "COMPLETA LOS DATOS";
     }
-  } else {
-    echo "COMPLETA LOS DATOS";
-  }
-}
+} 
+
 
 mysqli_close($conexion);
 ?>
