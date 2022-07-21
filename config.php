@@ -9,11 +9,9 @@ if(!$conexion){
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
 
-    // ELIMINACION DE ESPACIO CON TRIM
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
 
-    // ELIMINACION DE INJECCION (" OR 1=1#)
     if ($usuario && $contraseña) {
         $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
         $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
@@ -39,7 +37,5 @@ if (isset($_POST['login-register'])) {
   echo "apreta el boton gil";
 }
 
-
-// CIERRE DE LA CONEXION
 mysqli_close($conexion);
 ?>
