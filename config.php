@@ -13,12 +13,14 @@ if (isset($_POST['login-register'])) {
         $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
         $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
         echo "Vamos!";
-      } elseif ($usuario && $contraseña) {
-        //$ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
+      }
+      if ($usuario && $contraseña) {
+        $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
         echo "Lo Tenemos???";
         $resultado = mysqli_query($conexion, $ingreso);
         echo "Lo Tenemos!!!";
-      } elseif ($resultado) {
+      }
+      if ($resultado) {
           echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
       } else {
         echo "NO SE REGISTRO CORRECTAMENTE";
