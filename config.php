@@ -13,9 +13,12 @@ if (isset($_POST['register'])) {
     $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
 
     $peticion = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
-    echo "va queriendo";
-    $ingreso = mysqli_query($conexion, $peticion);
-    echo "Lo Tenemos!!!";
+    echo "Va queriendo";
+    if ($peticion){
+      $ingreso = mysqli_query($conexion, $peticion);
+      echo "Lo Tenemos!!!";
+    }
+
 
     if ($ingreso) {
       echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
