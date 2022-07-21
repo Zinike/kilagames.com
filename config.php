@@ -15,14 +15,14 @@ if (isset($_POST['login-register'])) {
         $resultado = mysqli_query($conexion, $ingreso);
         echo "prueba";
       } elseif ($resultado) {
-          echo "BIENVENIDO '$usuario' TE HAS REGISTRADO CORRECTAMENTE";
+          echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
       } else {
         echo "NO SE REGISTRO CORRECTAMENTE";
       }
     } else {
       echo "COMPLETA LOS DATOS";
     }
-} 
+}
 
 
 mysqli_close($conexion);
