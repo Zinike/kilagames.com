@@ -12,7 +12,7 @@ if (isset($_POST['login-register'])) {
       if ($usuarioregistro && $contraseñaregistro) {
         $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
         $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
-        echo "Vamos!";
+        echo "Vamos! / ";
       }
       if ($usuario && $contraseña) {
         $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
