@@ -23,6 +23,8 @@ if (isset($_POST['login-register'])) {
         $resultado = mysqli_query($conexion, $ingreso_db);
         if ($resultado){
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
+        } else {
+          echo "ya no se";
         }
     } else {
       echo "Algo no funciono";
