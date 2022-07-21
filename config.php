@@ -17,6 +17,8 @@ if (isset($_POST['register'])) {
     if ($peticion){
       $ingreso = mysqli_query($conexion, $peticion);
       echo "Lo Tenemos!!!";
+    } else {
+      echo "No se pudo registrar";
     }
 
 
