@@ -8,8 +8,7 @@ if (isset($_POST['login-register'])) {
     // ELIMINACION DE ESPACIO CON TRIM
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
-
-
+    echo "Usuario y Contraseña sin espacios";
     // ELIMINACION DE INJECCION (" OR 1=1#)
     if ($usuario && $contraseña){
         $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
