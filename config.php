@@ -1,36 +1,30 @@
 <?php
+require "conexion.php";
 
-include('conexion.php');
+if (isset($_POST['login-register'])) {
+  if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
 
-session_start();
+      $usuarioregistro = mysqli_real_escape_string($conexion, trim($_POST['usuario']));
+      $contraseñaregistro = mysqli_real_escape_string($conexion, trim($_POST['contraseña']));
 
-if (isset($_POST['register'])) {
+      echo "hasta ahora todo bien / ";
 
-    $usuario = $_POST['usuario'];
-    $contraseña = $_POST['contraseña'];
-    $contraseña_hash = contraseña_hash($contraseña, contraseña_BCRYPT);
-
-    $query = $conexion->prepare("SELECT * FROM usuarios WHERE usuario=:usuario");
-    $query->bindParam("usuario", $uduario, PDO::PARAM_STR);
-    $query->execute();
-
-    if ($query->rowCount() > 0) {
-        echo 'The usuario is already registered!';
-    }
-
-    if ($query->rowCount() == 0) {
-        $query = $connection->prepare("INSERT INTO usuarios(usuario,contraseña) VALUES (:usuario,:contraseña_hash)");
-        $query->bindParam("usuario", $usuario, PDO::PARAM_STR);
-        $query->bindParam("contraseña_hash", $contraseña_hash, PDO::PARAM_STR);
-        $result = $query->execute();
-
-        if ($result) {
-            echo 'Your registration was successful!';
-        } else {
-            echo 'Something went wrong!';
-        }
+      if ($usuarioregistro && $contraseñaregistro) {
+        $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
+        $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
+        echo "Vamos!";
+      } elseif ($usuario && $contraseña) {
+        $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario','$contraseña')";
+        $resultado = mysqli_query($conexion, $ingreso);
+        echo "prueba";
+      } elseif ($resultado) {
+          echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
+      } else {
+        echo "NO SE REGISTRO CORRECTAMENTE";
+      }
+    } else {
+      echo "COMPLETA LOS DATOS";
     }
 }
-
 mysqli_close($conexion);
 ?>
