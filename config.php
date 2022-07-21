@@ -26,9 +26,9 @@ if (isset($_POST['register'])) {
         $result = $query->execute();
 
         if ($result) {
-            echo '<p class="success">Your registration was successful!</p>';
+            echo 'Your registration was successful!';
         } else {
-            echo '<p class="error">Something went wrong!</p>';
+            echo 'Something went wrong!';
         }
     }
 }
