@@ -19,8 +19,8 @@ if (isset($_POST['login-register'])) {
         $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
 
     } if ($usuariov && $contraseña_codificada) {
-        $ingreso_db = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario_clear','$contraseña_codificada')";
-        $resultado = mysqli_query($conexion, $ingreso_db);
+        $ingresodb = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario_clear','$contraseña_codificada')";
+        $resultado = mysqli_query($conexion, $ingresodb);
         if ($resultado){
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
         } else {
