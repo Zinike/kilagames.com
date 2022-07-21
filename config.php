@@ -19,8 +19,7 @@ if (isset($_POST['login-register'])) {
         echo "Lo Tenemos???";
         $resultado = $ingreso->execute();
         echo "Lo Tenemos!!!";
-      }
-      if ($resultado) {
+        if ($resultado) {
           echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
       } else {
         echo "NO SE REGISTRO CORRECTAMENTE";
