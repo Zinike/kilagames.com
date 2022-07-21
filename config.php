@@ -28,7 +28,7 @@ if (isset($_POST['login-register'])) {
   } else {
     echo "COMPLETA LOS DATOS";
   }
-}
+
 
 mysqli_close($conexion);
 ?>
