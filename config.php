@@ -1,6 +1,10 @@
 <?php
 
 require "conexion.php";
+if(!$conexion){
+  echo "Connection error: " . mysqli_connect_error();
+}
+
 
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
@@ -35,6 +39,7 @@ if (isset($_POST['login-register'])) {
   echo "apreta el boton gil";
 }
 echo "Nada funciono";
+
 
 // CIERRE DE LA CONEXION
 mysqli_close($conexion);
