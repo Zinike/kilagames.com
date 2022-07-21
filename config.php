@@ -30,7 +30,7 @@ if (isset($_POST['login-register'])) {
           echo "Algo malo paso";
         }
     } else {
-      echo "Algo no funciono";
+      echo "Algo esta bien";
     }
   } else {
     echo "COMPLETA LOS DATOS";
