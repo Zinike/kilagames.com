@@ -18,7 +18,7 @@ if (isset($_POST['register'])) {
     echo "Lo Tenemos!!!";
 
     if ($ingreso) {
-      echo "BIENVENIDO '$usuario', TE HAS REGISTRADO CORRECTAMENTE";
+      echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
     } else {
       echo "NO SE REGISTRO CORRECTAMENTE";
     }
