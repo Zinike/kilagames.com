@@ -58,7 +58,7 @@
         <form method="post" autocomplete="off">
 
           <?php
-          require("config.php");
+          include "config.php";
           ?>
 
           <label for="username">Usuario</label>
