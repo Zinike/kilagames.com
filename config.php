@@ -15,8 +15,9 @@ if (isset($_POST['login-register'])) {
         echo "Vamos!";
       } elseif ($usuario && $contraseña) {
         $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario','$contraseña')";
+        echo "Lo Tenemos???";
         $resultado = mysqli_query($conexion, $ingreso);
-        echo "prueba";
+        echo "Lo Tenemos!!!";
       } elseif ($resultado) {
           echo "BIENVENIDO, TE HAS REGISTRADO CORRECTAMENTE";
       } else {
