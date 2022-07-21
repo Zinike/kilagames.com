@@ -25,6 +25,8 @@ if (isset($_POST['login-register'])) {
           echo "USUARIO Y CONTRASEÑA REGISTRADOS";
         }
     }
+  } else {
+    echo "COMPLETA LOS DATOS";
   }
 }
 // CIERRE DE LA CONEXION
