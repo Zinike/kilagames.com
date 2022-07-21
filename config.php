@@ -8,16 +8,19 @@ if (isset($_POST['login-register'])) {
     // ELIMINACION DE ESPACIO CON TRIM
     $usuario = trim($_POST['usuario']);
     $contraseña = trim($_POST['contraseña']);
+    echo "USUARIO Y CONTRASEÑA TOMADO <br>";
 
     // ELIMINACION DE INJECCION (" OR 1=1#)
     if ($usuario && $contraseña){
         $usuario_clear = mysqli_real_escape_string($conexion, $usuario);
         $contraseña_clear = mysqli_real_escape_string($conexion, $contraseña);
+        echo "";
 
     } if ($usuario_clear && $contraseña_clear) {
         $cotejamiento = "SELECT * FROM usuarios WHERE usuario='$usuario_clear'";
         $usuario = mysqli_query($conexion, $cotejamiento);
         $contraseña_codificada = password_hash($contraseña_clear, PASSWORD_BCRYPT);
+        echo "";
 
     } if ($usuario_verificado && $contraseña_codificada){
         $ingreso_db = "INSERT INTO usuarios (usuario, contraseña) VALUES ('$usuario','$contraseña_codificada')";
