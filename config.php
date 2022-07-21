@@ -18,7 +18,7 @@ if (isset($_POST['register'])) {
 
         $ingreso = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
         echo "Lo Tenemos???";
-        $resultado = $ingreso->execute();
+        $resultado = mysqli_query($conexion, $ingreso);
         echo "Lo Tenemos!!!";
 
       if ($resultado) {
