@@ -26,6 +26,4 @@ if (isset($_POST['register'])) {
     echo "COMPLETA LOS DATOS";
   }
 }
-mysqli_free_result($ingreso);
-mysqli_close($conexion);
 ?>
