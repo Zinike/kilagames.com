@@ -8,7 +8,7 @@ if (isset($_POST['register'])) {
 
     $usuarioregistro = mysqli_real_escape_string($conexion, trim($_POST['usuario']));
     $contraseñaregistro = mysqli_real_escape_string($conexion, trim($_POST['contraseña']));
-    $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario=:usuarioregistro");
+    $usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuarioregistro'");
     $contraseña = password_hash($contraseñaregistro, PASSWORD_BCRYPT);
 
     $peticion = "INSERT INTO usuarios (usuario, contraseña) VALUES (:usuario,:contraseña)";
