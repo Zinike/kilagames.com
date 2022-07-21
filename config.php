@@ -1,7 +1,7 @@
 <?php
 require "conexion.php";
 
-session_start();
+
 
 if (isset($_POST['login-register'])) {
   if (strlen($_POST['usuario']) >= 3 && strlen($_POST['contraseña']) >= 8) {
