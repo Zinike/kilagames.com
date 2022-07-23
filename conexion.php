@@ -5,7 +5,7 @@ if(!$conexion){
 }
 
 $pc = "SELECT * FROM pc ORDER BY pc.`id` DESC";
-$pclimited = "SELECT * FROM pc LIMIT 5 ORDER BY pc.`id` DESC";
+$pclimited = "SELECT * FROM pc LIMIT 5";
 
 $peliculas= "SELECT * FROM peliculas ORDER BY peliculas.`id` DESC";
 $peliculaslimited= "SELECT * FROM peliculas LIMIT 5 ORDER BY peliculas.`id` DESC";
