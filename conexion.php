@@ -9,5 +9,4 @@ $pclimited = "SELECT * FROM pc LIMIT 5 ORDER BY pc.`id` DESC";
 
 $peliculas= "SELECT * FROM peliculas ORDER BY peliculas.`id` DESC";
 $peliculaslimited= "SELECT * FROM peliculas LIMIT 5 ORDER BY peliculas.`id` DESC";
-
 ?>
