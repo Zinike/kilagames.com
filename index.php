@@ -91,8 +91,6 @@
             <p><?php echo $row['descripcion'];?></p>
             <div class="link">
               <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
-              <p>Contraseña:
-                <?php echo $row['contraseña'];?></p>
             </div>
           </div>
         </div>
