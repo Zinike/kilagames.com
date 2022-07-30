@@ -81,7 +81,7 @@
   <section id="peliculas">
     <div class="contenedor">
       <h2>Peliculas y Series</h2>
-      <form class="peliculas-series card" action="index.html" method="post">
+      <form class="peliculas-series card">
         <?php $resultado = mysqli_query($conexion, $peliculaslimited);
             while ($row=mysqli_fetch_assoc($resultado)) {?>
         <div class="tarjeta">
