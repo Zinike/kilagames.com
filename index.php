@@ -101,6 +101,29 @@
     </div>
   </section>
 
+  <section id="programas">
+    <div class="contenedor">
+      <h2>Programas</h2>
+      <form class="programas card">
+        <?php $resultado = mysqli_query($conexion, $programaslimited);
+            while ($row=mysqli_fetch_assoc($resultado)) {?>
+        <div class="tarjeta">
+          <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
+          <div class="texto">
+            <h3><?php echo $row['nombre'];?></h3>
+            <p><?php echo $row['descripcion'];?></p>
+            <div class="link">
+              <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
+            </div>
+          </div>
+        </div>
+        <?php }?>
+        <?php mysqli_free_result($resultado);?>
+      </form>
+      <a href="peliculas.php">Ver Más</a>
+    </div>
+  </section>
+
   <section id="social">
     <div class="contenedor">
       <div class="donacion">
