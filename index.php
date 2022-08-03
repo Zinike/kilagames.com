@@ -120,7 +120,7 @@
         <?php }?>
         <?php mysqli_free_result($resultado);?>
       </form>
-      <a href="peliculas.php">Ver Más</a>
+      <a href="programas.php">Ver Más</a>
     </div>
   </section>
 
