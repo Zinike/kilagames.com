@@ -51,11 +51,11 @@
     </div>
   </section>
 
-  <section id="peliculas">
+  <section id="programas">
     <div class="contenedor">
-      <h2>Peliculas y Series</h2>
+      <h2>Programas</h2>
       <form class="peliculas-series card" action="index.html" method="post">
-        <?php $resultado = mysqli_query($conexion, $peliculas);
+        <?php $resultado = mysqli_query($conexion, $programas);
           while ($row=mysqli_fetch_assoc($resultado)) {?>
         <div class="tarjeta">
           <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
@@ -64,6 +64,8 @@
             <p><?php echo $row['descripcion'];?></p>
             <div class="link">
               <a href="<?php echo $row['links'];?>" target="_blank">Descargar</a>
+              <p>Contraseña:
+                <?php echo $row['contraseña'];?></p>
             </div>
           </div>
         </div>
