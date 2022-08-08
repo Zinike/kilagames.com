@@ -823,7 +823,7 @@ body {
 
   #programas .contenedor .card .tarjeta img {
     width: auto;
-    height: 60%;
+    height: auto;
   }
 
   #programas .contenedor .card .tarjeta .texto {
