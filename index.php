@@ -108,7 +108,7 @@
         <?php $resultado = mysqli_query($conexion, $programaslimited);
             while ($row=mysqli_fetch_assoc($resultado)) {?>
         <div class="tarjeta">
-          <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px">
+          <img src="<?php echo $row['foto'];?>" alt="imagen" height="200px" width="200px">
           <div class="texto">
             <h3><?php echo $row['nombre'];?></h3>
             <p><?php echo $row['descripcion'];?></p>
