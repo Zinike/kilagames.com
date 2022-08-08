@@ -810,9 +810,9 @@ body {
   #programas .contenedor .card .tarjeta {
     position: relative;
     overflow: hidden;
-    height: 480px;
+    height: 400px;
     width: 200px;
-    max-height: 500px;
+    max-height: 600px;
     max-width: 400px;
     margin: 15px;
     border-radius: 8px;
