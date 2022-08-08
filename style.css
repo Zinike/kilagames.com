@@ -340,7 +340,7 @@ body {
 
   #programas .contenedor .card .tarjeta img {
     width: auto;
-    height: 60%;
+    height: auto;
   }
 
   #programas .contenedor .card .tarjeta .texto {
@@ -810,7 +810,7 @@ body {
   #programas .contenedor .card .tarjeta {
     position: relative;
     overflow: hidden;
-    height: 350px;
+    height: 480px;
     width: 200px;
     max-height: 600px;
     max-width: 400px;
