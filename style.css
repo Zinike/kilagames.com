@@ -812,7 +812,7 @@ body {
     overflow: hidden;
     height: 480px;
     width: 200px;
-    max-height: 600px;
+    max-height: 500px;
     max-width: 400px;
     margin: 15px;
     border-radius: 8px;
@@ -823,12 +823,12 @@ body {
 
   #programas .contenedor .card .tarjeta img {
     width: auto;
-    height: 50%;
+    height: 60%;
   }
 
   #programas .contenedor .card .tarjeta .texto {
     width: auto;
-    height: 50%;
+    height: 40%;
   }
 
   #programas .contenedor .card .tarjeta .texto p {
